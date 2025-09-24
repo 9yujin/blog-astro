@@ -4,15 +4,15 @@ import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
-import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
+//
 
 const blog = (await getCollection("blog"))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
 
-const projects = (await getCollection("projects"))
+/* const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
@@ -26,19 +26,19 @@ const work = await Promise.all(
     const { Content } = await item.render();
     return { ...item, Content };
   })
-);
+); */
 
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <h4 class="animate font-semibold text-black dark:text-white">
+    <h4 class="font-semibold text-black dark:text-white">
       Hi, I'm Nano <span class="text-xl">👋🏻</span> 
     </h4>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
-          <p class="animate">
+          <p class="">
             I am a minimal, seo friendly, accessible portfolio and blog for developers. 
             I am an even more lightweight version of my popular theme
             <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
@@ -47,13 +47,13 @@ const work = await Promise.all(
             I have a lighthouse scores of 100 across the board for performance, 
             accesibility, best practices and SEO.
           </p>
-          <p class="animate">
+          <p class="">
             I come packed with full type safety, a sitemap, an rss feed, markdown 
             and mdx support (use components in your markdown) through astro integrations.
             I am styled with tailwind and come preconfigured with light, dark and 
             system/os theme preferences out of the box.
           </p>
-          <p class="animate">
+          <p class="">
             Visit
             <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
               Astro Nano on Github
@@ -63,24 +63,25 @@ const work = await Promise.all(
         </article>
       </section>
 
-      <section class="animate space-y-6">
+      <section class="space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
+            Recent posts
           </h5>
-          <Link href="/blog">
+          <!-- <Link href="/blog">
             See all posts
-          </Link>
+          </Link> -->
         </div>
-        <ul class="flex flex-col gap-4">
+        <ul class="flex flex-col">
           {blog.map(post => (
             <li>
-              <ArrowCard entry={post} />
+              <ArrowCard entry={post} padding="py-1.5"/>
             </li>
           ))}
         </ul>
       </section>
 
+      <!--
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
@@ -109,7 +110,9 @@ const work = await Promise.all(
           ))}
         </ul>
       </section>
+       -->
 
+      <!-- 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
@@ -127,31 +130,31 @@ const work = await Promise.all(
           ))}
         </ul>
       </section>
+      -->
 
-      <section class="animate space-y-4">
+      <section class="space-y-4">
         <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
+          Contacts
         </h5>
         <article>
           <p>
-            If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
+            Just say hi
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
           {SOCIALS.map(SOCIAL => (
             <li class="flex gap-x-2 text-nowrap">
               <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
-                {SOCIAL.NAME}
+                <img src={`/svgs/${SOCIAL.NAME}.svg`} alt={SOCIAL.NAME} class="size-5 fill-current " />
               </Link>
-              {"/"}
+             
             </li>
           ))}
-          <li class="line-clamp-1">
+         <!--  <li class="line-clamp-1">
             <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
               {SITE.EMAIL}
             </Link>
-          </li>
+          </li> -->
         </ul>
       </section>
     </div>

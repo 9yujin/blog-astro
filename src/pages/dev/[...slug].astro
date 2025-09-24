@@ -8,52 +8,48 @@ import BackToPrev from "@components/BackToPrev.astro";
 import Link from "@components/Link.astro";
 
 export async function getStaticPaths() {
-  const projects = (await getCollection("projects"))
+  const devPosts = (await getCollection("dev"))
     .filter(post => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-  return projects.map((project) => ({
-    params: { slug: project.slug },
-    props: project,
+  return devPosts.map((dev) => ({
+    params: { slug: dev.slug },
+    props: dev,
   }));
 }
-type Props = CollectionEntry<"projects">;
+type Props = CollectionEntry<"dev">;
 
-const project = Astro.props;
-const { Content } = await project.render();
+const dev = Astro.props;
+const { Content } = await dev.render();
 ---
 
-<PageLayout title={project.data.title} description={project.data.description}>
+<PageLayout title={dev.data.title} description={dev.data.description}>
   <Container>
-    <div class="animate">
-      <BackToPrev href="/projects">
-        Back to projects
-      </BackToPrev>
-    </div>
     <div class="space-y-1 my-10">
+      <div class="animate text-2xl font-semibold text-black dark:text-white">
+        {dev.data.title}
+      </div>
       <div class="animate flex items-center gap-1.5">
         <div class="font-base text-sm">
-          <FormattedDate date={project.data.date} />
+          <FormattedDate date={dev.data.date} />
         </div>
         &bull;
         <div class="font-base text-sm">
-          {readingTime(project.body)}
+          {readingTime(dev.body)}
         </div>
       </div>
-      <div class="animate text-2xl font-semibold text-black dark:text-white">
-        {project.data.title}
-      </div>
-      {(project.data.demoURL || project.data.repoURL) && (
+      
+      {(dev.data.demoURL || dev.data.repoURL) && (
         <nav class="animate flex gap-1">
-          {project.data.demoURL && (
-            <Link href={project.data.demoURL} external>
+          {dev.data.demoURL && (
+            <Link href={dev.data.demoURL} external>
               demo
             </Link>
           )}
-          {project.data.demoURL && project.data.repoURL && (
+          {dev.data.demoURL && dev.data.repoURL && (
             <span>/</span>
           )}
-          {project.data.repoURL && (
-            <Link href={project.data.repoURL} external>
+          {dev.data.repoURL && (
+            <Link href={dev.data.repoURL} external>
               repo
             </Link>
           )}
@@ -63,5 +59,11 @@ const { Content } = await project.render();
     <article class="animate">
       <Content />
     </article>
+    <div class="h-10"/>
+    <div class="animate">
+      <BackToPrev href="/dev">
+        Back to dev
+      </BackToPrev>
+    </div>
   </Container>
 </PageLayout>

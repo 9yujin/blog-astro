@@ -5,15 +5,24 @@ type Props = {
   href: string;
   external?: boolean;
   underline?: boolean;
+  exact?: boolean;
 }
 
-const { href, external, underline = true, ...rest } = Astro.props;
+const { href, external, underline = true, exact = false, ...rest } = Astro.props;
 ---
 
+{/**
+  현재 페이지의 경로와 href가 같으면 active로 간주하여
+  더 진한 색상(폰트 bold, 색상 강조) 적용
+*/}
 <a 
   href={href} 
   target={ external ? "_blank" : "_self" } 
-  class={cn("inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out", underline && "underline underline-offset-2")}
+  class={cn(
+    "inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out",
+    underline && (exact ? Astro.url.pathname === href : Astro.url.pathname.startsWith(href)) && "underline underline-offset-2",
+    (exact ? Astro.url.pathname === href : Astro.url.pathname.startsWith(href)) && "text-black dark:text-white decoration-black dark:decoration-black"
+  )}
   {...rest}>
   <slot/>
 </a>
