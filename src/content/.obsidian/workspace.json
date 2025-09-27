@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#product",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,8 +172,13 @@
   },
   "active": "20452e5ef10fb2d5",
   "lastOpenFiles": [
-    "blog/3분기 후일담/assets/Pasted image 20250927234429.png",
+    "blog/3분기 후일담/assets/Pasted image 20250928002517.png",
     "blog/3분기 후일담/index.md.md",
+    "blog/3분기 후일담/assets/Pasted image 20250928002533.png",
+    "blog/3분기 후일담/assets/Pasted image 20250928002418.png",
+    "blog/3분기 후일담/assets/Pasted image 20250928002358.png",
+    "blog/3분기 후일담/assets/Pasted image 20250928000625.png",
+    "blog/3분기 후일담/assets/Pasted image 20250927234429.png",
     "blog/3분기 후일담/assets/Pasted image 20250928000248.png",
     "blog/3분기 후일담/assets/Pasted image 20250927234358.png",
     "blog/3분기 후일담/assets",
