@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
@@ -8,7 +8,26 @@ import { ARCHIVE } from "@consts";
 const archives = (await getCollection("archive"))
   .filter(archive => !archive.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+  type Acc = {
+  [year: string]: CollectionEntry<"archive">[];
+}
+
+const posts = archives.reduce((acc: Acc, post) => {
+    const year = post.data.date.getFullYear().toString();
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  }, {});
+
+const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a)); 
+
 ---
+
+
+
 
 <PageLayout title={ARCHIVE.TITLE} description={ARCHIVE.DESCRIPTION}>
   <Container>
@@ -16,15 +35,26 @@ const archives = (await getCollection("archive"))
       <div class="font-semibold text-black dark:text-white">
         Archive
       </div>
-      <ul class="flex flex-col gap-4">
-        {
-          archives.map((dev) => (
-            <li>
-              <ArrowCard entry={dev}/>
-            </li>
-          ))
-        }
-      </ul>
+      <div class="space-y-4">
+        {years.map(year => (
+          <section class="space-y-4">
+            <div class="font-semibold text-black dark:text-white">
+              {year}
+            </div>
+            <div>
+              <ul class="flex flex-col mb-8">
+                {
+                  posts[year].map((post) => (
+                    <li>
+                      <ArrowCard entry={post} padding="py-1.5" arrow={false}/>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </section>
+        ))}
+      </div>
     </div>
   </Container>
 </PageLayout>

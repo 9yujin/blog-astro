@@ -25,10 +25,10 @@ const { Content } = await archive.render();
 <PageLayout title={archive.data.title} description={archive.data.description}>
   <Container>
     <div class="space-y-1 my-10">
-      <div class="animate text-2xl font-semibold text-black dark:text-white">
+      <div class=" text-2xl font-semibold text-black dark:text-white">
         {archive.data.title}
       </div>
-      <div class="animate flex items-center gap-1.5">
+      <div class=" flex items-center gap-1.5">
         <div class="font-base text-sm">
           <FormattedDate date={archive.data.date} />
         </div>
@@ -39,7 +39,7 @@ const { Content } = await archive.render();
       </div>
       
       {(archive.data.demoURL || archive.data.repoURL) && (
-        <nav class="animate flex gap-1">
+        <nav class=" flex gap-1">
           {archive.data.demoURL && (
             <Link href={archive.data.demoURL} external>
               demo
@@ -56,11 +56,11 @@ const { Content } = await archive.render();
         </nav>
       )}
     </div>
-    <article class="animate">
+    <article class="">
       <Content />
     </article>
     <div class="h-10"/>
-    <div class="animate">
+    <div class="">
       <BackToPrev href="/archive">
         Back to archive
       </BackToPrev>

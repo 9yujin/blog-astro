@@ -114,6 +114,9 @@ article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
   @apply prose-headings:font-semibold prose-p:font-serif;
   @apply prose-headings:text-black prose-headings:dark:text-white;
+
+  line-height: 1.7;
+  word-break: keep-all;
 }
 
 @layer utilities {
@@ -147,4 +150,24 @@ html.scrolled #back-to-top {
 
 article img {
   border-radius: 8px;
+}
+
+article .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 비율 (9 / 16 * 100) */
+  height: 0;
+}
+
+article .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+article li {
+  margin: 0;
+  padding-inline-start: 0;
 }
