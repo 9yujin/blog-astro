@@ -4,7 +4,10 @@ const blog = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    description: z.string(),
+    description: z
+      .string()
+      .nullable()
+      .transform((val) => val ?? ""),
     date: z.coerce.date(),
     draft: z.boolean().optional(),
   }),
@@ -24,7 +27,10 @@ const archive = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    description: z.string(),
+    description: z
+      .string()
+      .nullable()
+      .transform((val) => val ?? ""),
     date: z.coerce.date(),
     draft: z.boolean().optional(),
     demoURL: z.string().optional(),
