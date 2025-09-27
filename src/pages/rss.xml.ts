@@ -9,11 +9,11 @@ type Context = {
 export async function GET(context: Context) {
   const blog = (await getCollection("blog")).filter((post) => !post.data.draft);
 
-  const dev = (await getCollection("dev")).filter(
-    (project) => !project.data.draft
+  const archive = (await getCollection("archive")).filter(
+    (archive) => !archive.data.draft
   );
 
-  const items = [...blog, ...dev].sort(
+  const items = [...blog, ...archive].sort(
     (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
   );
 
