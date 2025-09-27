@@ -3,11 +3,12 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "@components/FormattedDate.astro";
 
 type Props = {
-  entry: CollectionEntry<"blog"> | CollectionEntry<"dev">;
+  entry: CollectionEntry<"blog"> | CollectionEntry<"archive">;
   padding?: string;
+  arrow?: boolean;
 }
 
-const { entry, padding  } = Astro.props;
+const { entry, padding, arrow = true  } = Astro.props;
 ---
 
 <a href={`/${entry.collection}/${entry.slug}`} class={`relative group flex flex-nowrap ${padding} rounded-lg transition-all duration-300 ease-in-out`}>
@@ -19,13 +20,13 @@ const { entry, padding  } = Astro.props;
       <div class="text-sm font-normal ">
         <FormattedDate date={entry.data.date} />
       </div>
-      <svg 
+      {arrow && <svg 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 24 24"
         class="size-5 stroke-2 fill-none stroke-current">
         <line x1="5" y1="12" x2="19" y2="12" class="translate-x-3 group-hover:translate-x-0 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out" />
         <polyline points="12 5 19 12 12 19" class="-translate-x-1 group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
-      </svg>
+      </svg>}
     </div>
   </div>
 </a>

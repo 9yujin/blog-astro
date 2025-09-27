@@ -20,7 +20,7 @@ const resume = defineCollection({
   }),
 });
 
-const dev = defineCollection({
+const archive = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
@@ -32,4 +32,4 @@ const dev = defineCollection({
   }),
 });
 
-export const collections = { blog, resume, dev };
+export const collections = { blog, resume, archive };

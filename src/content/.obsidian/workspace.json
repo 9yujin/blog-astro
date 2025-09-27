@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "d0c5a98516364160",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c20fccbd5bb177b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20452e5ef10fb2d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/01-3분기 후일담.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-3분기 후일담"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a828841739d8d23a",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6db29d97a21a7f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e0ce0987b052aed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "a0082125db472394",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "370b9e1f4444ef5d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "22f327b5a510fa67",
+    "type": "split",
+    "children": [
+      {
+        "id": "c37e9d441fa8a675",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dcd20ff90e0052a1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "blog/01-3분기 후일담.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "01-3분기 후일담 의 백링크"
+            }
+          },
+          {
+            "id": "0df36b6013518f5b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "blog/01-3분기 후일담.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "01-3분기 후일담 의 나가는 링크"
+            }
+          },
+          {
+            "id": "c954e242c3952391",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "5f35c9be86443403",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "blog/01-3분기 후일담.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "01-3분기 후일담 의 개요"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "20452e5ef10fb2d5",
+  "lastOpenFiles": [
+    "archive/project-1/index.md",
+    "2025-09-27.md",
+    "무제.canvas",
+    "blog/01-3분기 후일담.md",
+    "blog/04-work-collection.md",
+    "blog/03-projects-collection.md",
+    "blog/02-blog-collection.md",
+    "template.md"
+  ]
+}

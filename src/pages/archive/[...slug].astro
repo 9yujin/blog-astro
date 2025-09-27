@@ -8,48 +8,48 @@ import BackToPrev from "@components/BackToPrev.astro";
 import Link from "@components/Link.astro";
 
 export async function getStaticPaths() {
-  const devPosts = (await getCollection("dev"))
+  const archives = (await getCollection("archive"))
     .filter(post => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-  return devPosts.map((dev) => ({
-    params: { slug: dev.slug },
-    props: dev,
+  return archives.map((archive) => ({
+    params: { slug: archive.slug },
+    props: archive,
   }));
 }
-type Props = CollectionEntry<"dev">;
+type Props = CollectionEntry<"archive">;
 
-const dev = Astro.props;
-const { Content } = await dev.render();
+const archive = Astro.props;
+const { Content } = await archive.render();
 ---
 
-<PageLayout title={dev.data.title} description={dev.data.description}>
+<PageLayout title={archive.data.title} description={archive.data.description}>
   <Container>
     <div class="space-y-1 my-10">
       <div class="animate text-2xl font-semibold text-black dark:text-white">
-        {dev.data.title}
+        {archive.data.title}
       </div>
       <div class="animate flex items-center gap-1.5">
         <div class="font-base text-sm">
-          <FormattedDate date={dev.data.date} />
+          <FormattedDate date={archive.data.date} />
         </div>
         &bull;
         <div class="font-base text-sm">
-          {readingTime(dev.body)}
+          {readingTime(archive.body)}
         </div>
       </div>
       
-      {(dev.data.demoURL || dev.data.repoURL) && (
+      {(archive.data.demoURL || archive.data.repoURL) && (
         <nav class="animate flex gap-1">
-          {dev.data.demoURL && (
-            <Link href={dev.data.demoURL} external>
+          {archive.data.demoURL && (
+            <Link href={archive.data.demoURL} external>
               demo
             </Link>
           )}
-          {dev.data.demoURL && dev.data.repoURL && (
+          {archive.data.demoURL && archive.data.repoURL && (
             <span>/</span>
           )}
-          {dev.data.repoURL && (
-            <Link href={dev.data.repoURL} external>
+          {archive.data.repoURL && (
+            <Link href={archive.data.repoURL} external>
               repo
             </Link>
           )}
@@ -61,8 +61,8 @@ const { Content } = await dev.render();
     </article>
     <div class="h-10"/>
     <div class="animate">
-      <BackToPrev href="/dev">
-        Back to dev
+      <BackToPrev href="/archive">
+        Back to archive
       </BackToPrev>
     </div>
   </Container>

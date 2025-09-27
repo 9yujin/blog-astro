@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Pretendard", ...defaultTheme.fontFamily.sans],
-        serif: ["Pretendard", ...defaultTheme.fontFamily.serif],
+        sans: ["Pretendard", "Tossface", ...defaultTheme.fontFamily.sans],
+        serif: ["Pretendard", "Tossface", ...defaultTheme.fontFamily.serif],
       },
     },
   },

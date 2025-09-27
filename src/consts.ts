@@ -24,10 +24,10 @@ export const RESUME: Metadata = {
     "A collection of my resume, with links to repositories and demos.",
 };
 
-export const DEV: Metadata = {
-  TITLE: "Dev",
+export const ARCHIVE: Metadata = {
+  TITLE: "Archive",
   DESCRIPTION:
-    "A collection of my projects, with links to repositories and demos.",
+    "A collection of my archive, with links to repositories and demos.",
 };
 
 export const SOCIALS: Socials = [
