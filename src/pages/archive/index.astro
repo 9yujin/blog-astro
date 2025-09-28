@@ -46,7 +46,7 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
                 {
                   posts[year].map((post) => (
                     <li>
-                      <ArrowCard entry={post} padding="py-1.5" arrow={false}/>
+                      <ArrowCard entry={post} padding="py-2" arrow={false}/>
                     </li>
                   ))
                 }

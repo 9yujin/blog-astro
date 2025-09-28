@@ -11,9 +11,9 @@ type Props = {
 const { entry, padding, arrow = true  } = Astro.props;
 ---
 
-<a href={`/${entry.collection}/${entry.slug}`} class={`relative group flex flex-nowrap ${padding} rounded-lg transition-all duration-300 ease-in-out`}>
-  <div class="flex justify-between items-center flex-1 truncate">
-    <div class="decoration-black/15 dark:decoration-white/30 group-hover:decoration-black/25 group-hover:dark:decoration-white/50 text-black/75 dark:text-white/90 group-hover:text-black group-hover:dark:text-white transition-colors duration-300 ease-in-out group-hover:underline underline-offset-2">
+<a href={`/${entry.collection}/${entry.slug}`} class={`relative group flex flex-wrap ${padding} rounded-lg transition-all duration-300 ease-in-out`}>
+  <div class="flex justify-between items-center flex-1">
+    <div class="decoration-black/15 dark:decoration-white/30 group-hover:decoration-black/25 group-hover:dark:decoration-white/50 text-black/75 dark:text-white/90 group-hover:text-black group-hover:dark:text-white transition-colors duration-300 ease-in-out group-hover:underline underline-offset-2 flex-1 pr-4">
       {entry.data.title}
     </div>
     <div class="flex items-center gap-2 flex-shrink-0">
