@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/3분기 후일담/index.md",
+                "file": "archive/bankidz-5/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 401.5
+    "width": 200
   },
   "right": {
     "id": "22f327b5a510fa67",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/3분기 후일담/index.md",
+                "file": "archive/bankidz-5/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/3분기 후일담/index.md",
+                "file": "archive/bankidz-5/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/3분기 후일담/index.md",
+                "file": "archive/bankidz-5/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -172,35 +172,39 @@
   },
   "active": "44418ebafa1560d1",
   "lastOpenFiles": [
-    "archive/bankidz-2/index.md",
-    "archive/bankidz-1/index.md",
+    "archive/bankidz-6/index.md",
+    "archive/bankidz-7/index.md",
+    "archive/bankidz-8/index.md",
     "archive/bankidz-4/index.md",
+    "archive/bankidz-5/index.md",
+    "archive/bankidz-5/assets/Pasted image 20250929000854.png",
+    "archive/bankidz-5/assets",
+    "archive/bankidz-6/assets/Pasted image 20250929000851.png",
+    "archive/bankidz-6/assets",
+    "archive/bankidz-8/assets/Pasted image 20250929000848.png",
+    "archive/bankidz-8/assets",
+    "archive/bankidz-7/assets/Pasted image 20250929000844.png",
+    "archive/bankidz-7/assets",
     "archive/bankidz-3/index.md",
-    "archive/bankidz-4",
-    "archive/bankidz-3",
+    "archive/bankidz-8",
+    "archive/bankidz-7",
+    "archive/bankidz-6",
+    "archive/bankidz-5",
+    "archive/bankidz-1/index.md",
+    "archive/bankidz-1/assets/Pasted image 20250928235459.png",
+    "archive/bankidz-2/index.md",
+    "archive/bankidz-3/assets/Pasted image 20250928235447.png",
+    "archive/bankidz-3/assets",
+    "archive/bankidz-2/assets/Pasted image 20250928235440.png",
+    "archive/bankidz-2/assets",
+    "blog/3분기 후일담/index.md",
     "React.md",
-    "archive/bankidz-2",
     "archive/bankidz-1/assets/Pasted image 20250928232535.png",
     "archive/bankidz-1/assets/Pasted image 20250928232528.png",
     "archive/bankidz-1/assets/Pasted image 20250928232517.png",
-    "archive/bankidz-1/assets",
     "archive/1분기 후일담/index.md",
-    "archive/bankidz-1",
-    "blog/3분기 후일담/index.md",
-    "archive/2분기 후일담/assets/nell.gif",
-    "archive/2분기 후일담/assets/Pasted image 20250928222816.png",
-    "archive/2분기 후일담/assets/Pasted image 20250928222749.png",
-    "archive/2분기 후일담/assets/Pasted image 20250928222656.png",
     "archive/2분기 후일담/index.md",
-    "archive/2분기 후일담/assets",
-    "archive/2분기 후일담",
-    "archive/1분기 후일담",
-    "archive",
     "archived/2분기 후일담/index.md",
-    "archived/2분기 후일담/assets/nell.gif",
-    "archived/2분기 후일담/assets/Pasted image 20250928222816.png",
-    "archived/2분기 후일담/assets/Pasted image 20250928222749.png",
-    "archived/2분기 후일담/index.mdx",
     "archived/1분기 후일담/index.md",
     "blog/2분기 후일담/index.md",
     "blog/1분기 후일담/index.md",

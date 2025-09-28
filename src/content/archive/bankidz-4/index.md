@@ -1,8 +1,8 @@
 ---
-title: "[뱅키즈] 3. 돈길 계약하기"
+title: "[뱅키즈] 4. 돈길 계약하기"
 description:
-date: 07/27/2022
-draft: true
+date: 10/7/2022
+draft: false
 ---
 ![](https://blog.kakaocdn.net/dna/7DAgu/btrMS3cvqjP/AAAAAAAAAAAAAAAAAAAAAMFOLSKshLuXz9WTvSjAsh9HxJTWZPQIhLjBZZ6iltl3/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=AW5PZAxRAc6bqMBXDVQt%2B14%2B3uM%3D)
 

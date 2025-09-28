@@ -1,5 +1,5 @@
 ---
-title: 3분기 후일담
+title: 3분기 후일담 (2023.10)
 description:
 date: 10/20/2023
 ---
