@@ -1,5 +1,5 @@
 ---
-title: IT 커뮤니티 넥스터즈 22기 - 활동 후기
+title: 넥스터즈 22기 - 활동 후기
 description:
 date: 03/27/2023
 draft: false

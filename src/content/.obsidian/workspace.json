@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archive/ceos-1/index.md",
+                "file": "archive/nexters-2/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archive/ceos-1/index.md",
+                "file": "archive/nexters-2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archive/ceos-1/index.md",
+                "file": "archive/nexters-2/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archive/ceos-1/index.md",
+                "file": "archive/nexters-2/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -172,9 +172,9 @@
   },
   "active": "44418ebafa1560d1",
   "lastOpenFiles": [
-    "archive/nexters-2/index.md",
     "archive/nexters-1/index.md",
     "archive/ceos-1/index.md",
+    "archive/nexters-2/index.md",
     "archive/bankidz-8/index.md",
     "archive/ceos-1",
     "blog/3분기 후일담/index.md",

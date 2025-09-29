@@ -1,5 +1,5 @@
 ---
-title: IT 커뮤니티 넥스터즈 22기 - 서류, 면접, 합격 후기
+title: 넥스터즈 22기 - 서류, 면접, 합격 후기
 description:
 date: 01/18/2023
 draft: false
