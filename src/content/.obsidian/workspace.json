@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archive/nexters-2/index.md",
+                "file": "archive/전역/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archive/nexters-2/index.md",
+                "file": "archive/전역/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archive/nexters-2/index.md",
+                "file": "archive/전역/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archive/nexters-2/index.md",
+                "file": "archive/전역/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -172,9 +172,15 @@
   },
   "active": "44418ebafa1560d1",
   "lastOpenFiles": [
+    "archive/2022/index.md",
+    "archive/전역/index.md",
+    "archive/전역",
+    "archive/2022/assets/tfile.m4a",
+    "archive/2022/assets",
+    "archive/nexters-2/index.md",
+    "archive/2022",
     "archive/nexters-1/index.md",
     "archive/ceos-1/index.md",
-    "archive/nexters-2/index.md",
     "archive/bankidz-8/index.md",
     "archive/ceos-1",
     "blog/3분기 후일담/index.md",
@@ -193,11 +199,7 @@
     "archive/bankidz-8/assets/Pasted image 20250929000848.png",
     "archive/bankidz-8/assets",
     "archive/bankidz-7/assets/Pasted image 20250929000844.png",
-    "archive/bankidz-7/assets",
     "archive/bankidz-3/index.md",
-    "archive/bankidz-8",
-    "archive/bankidz-7",
-    "archive/bankidz-6",
     "archive/bankidz-1/index.md",
     "archive/bankidz-1/assets/Pasted image 20250928235459.png",
     "archive/bankidz-2/index.md",
@@ -216,8 +218,6 @@
     "blog/3분기 후일담/2분기 후일담/index.md",
     "blog/3분기 후일담/1분기 후일담/index.md",
     "template/content.md",
-    "archive/project-1/index.md",
-    "2025-09-27.md",
     "무제.canvas"
   ]
 }
