@@ -1,5 +1,5 @@
 ---
-title: "[뱅키즈] 6. React transition group 라우팅 트랜지션 (1)"
+title: "[뱅키즈] 6. React transition group (1)"
 description:
 date: 10/15/2022
 draft: false
