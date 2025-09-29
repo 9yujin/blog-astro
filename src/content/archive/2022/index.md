@@ -4,11 +4,12 @@ description:
 date: 12/27/2022
 draft: false
 ---
+![](https://blog.kakaocdn.net/dna/nqgkr/btrUxplDXZV/AAAAAAAAAAAAAAAAAAAAAMMblLWa__uOGk-0cgbhSPFkOreR2oBddx0FLcHllF06/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=OkSjoromcIMnGiX5Wnfu1ZTssPI%3D)
 
 #### 1. 글을 위한 글
 
 ![](https://blog.kakaocdn.net/dna/DFT6C/btrTMRPUnY1/AAAAAAAAAAAAAAAAAAAAADrIUJudhkvjE_Bfm3P8ZIWo_clD4njnzOoRqbFeksIY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=lW50V0dnR6fCEgARWN3W5NeHNFM%3D)
-http://news.kyobobook.co.kr/people/writerView.ink?sntn_id=11083
+
 
 이 블로그에 이런저런 잡다한 글을 올리는 카테고리 이름을 바꿨다. 글을 위한 글. 이석원의 블로그 제목과 똑같은 이름이다. 나도 개발자로서의 기술 블로그가 아니라 그냥 글을 쓰는 사람으로서 글을 쓰고 싶다는 욕심으로 가져왔다. 네이버 일상블로그도 그렇고 티스토리도 그렇고, 처음 의도대로 관리되고 있지는 않아서 아쉬운 무언가가 있다. 그 무언가가 뭔지는 아직 모르겠음. 주변의 글을 잘 쓰는 친구들의 영향을 많이 받는다. 문창과 교양과제 출품작이라고 올렸던 단편 소설이 엄청 충격이었다. 저게 공대생 머리에서 나올 수 있는 글인가? 그때부터 나도 글을 조금씩 성의있게 쓰기 시작했던것 같음. 잘 쓰기 이전에 성의있게 쓰기!
 
@@ -115,7 +116,5 @@ http://news.kyobobook.co.kr/people/writerView.ink?sntn_id=11083
 졸업 전에 마지막으로 할 수 있는 프로젝트일 것 같다. 더군다나 한 프로젝트에 반년 이상 시간을 쏟을 수 있는 기회도 이번이 마지막일 것 같음. 좋은 팀원들로 모였으니 재밌는 기획, 재밌는 개발 해봐야겠다.
 
 ---
-
-![](https://blog.kakaocdn.net/dna/nqgkr/btrUxplDXZV/AAAAAAAAAAAAAAAAAAAAAMMblLWa__uOGk-0cgbhSPFkOreR2oBddx0FLcHllF06/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=OkSjoromcIMnGiX5Wnfu1ZTssPI%3D)
 
 행복한 휴일!
