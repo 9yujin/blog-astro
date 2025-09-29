@@ -97,9 +97,26 @@ body {
 }
 
 header {
-  @apply fixed top-0 left-0 right-0 z-50 py-5;
-  @apply bg-stone-100/75 dark:bg-stone-900/75;
-  @apply backdrop-blur-sm;
+  @apply fixed top-0 left-0 right-0 z-50;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  /* @apply backdrop-blur-sm; */
+  background: linear-gradient(
+    to bottom,
+    theme("colors.stone.100" / 100%) 0%,
+    theme("colors.stone.100" / 80%) 20%,
+    theme("colors.stone.100" / 50%) 60%,
+    theme("colors.stone.100" / 0%) 100%
+  );
+}
+html.dark header {
+  background: linear-gradient(
+    to bottom,
+    theme("colors.stone.900" / 100%) 0%,
+    theme("colors.stone.900" / 80%) 20%,
+    theme("colors.stone.900" / 50%) 60%,
+    theme("colors.stone.900" / 0%) 100%
+  );
 }
 
 main {
