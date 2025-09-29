@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archive/전역/index.md",
+                "file": "archive/2022/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archive/전역/index.md",
+                "file": "archive/2022/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archive/전역/index.md",
+                "file": "archive/2022/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archive/전역/index.md",
+                "file": "archive/2022/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -172,10 +172,12 @@
   },
   "active": "44418ebafa1560d1",
   "lastOpenFiles": [
+    "archive/2022/assets/tfile.m4a",
+    "archive/bankidz-6/index.md",
     "archive/2022/index.md",
+    "archive/bankidz-6/assets/Pasted image 20250929000851.png",
     "archive/전역/index.md",
     "archive/전역",
-    "archive/2022/assets/tfile.m4a",
     "archive/2022/assets",
     "archive/nexters-2/index.md",
     "archive/2022",
@@ -189,12 +191,10 @@
     "archive/무제.md",
     "archive/bankidz-5/index.md",
     "archive/nexters-2",
-    "archive/bankidz-6/index.md",
     "archive/bankidz-7/index.md",
     "archive/bankidz-4/index.md",
     "archive/bankidz-5/assets/Pasted image 20250929000854.png",
     "archive/bankidz-5/assets",
-    "archive/bankidz-6/assets/Pasted image 20250929000851.png",
     "archive/bankidz-6/assets",
     "archive/bankidz-8/assets/Pasted image 20250929000848.png",
     "archive/bankidz-8/assets",
@@ -217,7 +217,6 @@
     "blog/1분기 후일담/index.md",
     "blog/3분기 후일담/2분기 후일담/index.md",
     "blog/3분기 후일담/1분기 후일담/index.md",
-    "template/content.md",
     "무제.canvas"
   ]
 }
