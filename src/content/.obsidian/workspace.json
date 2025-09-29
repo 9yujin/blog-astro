@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archive/bankidz-5/index.md",
+                "file": "archive/bankidz-8/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archive/bankidz-5/index.md",
+                "file": "archive/bankidz-8/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archive/bankidz-5/index.md",
+                "file": "archive/bankidz-8/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archive/bankidz-5/index.md",
+                "file": "archive/bankidz-8/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -170,13 +170,22 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "44418ebafa1560d1",
+  "active": "5e0ce0987b052aed",
   "lastOpenFiles": [
+    "archive/ceos-1/신촌 IT창업동아리 CEOS 15기 16기 회 - 서류, 면접, 활동 후기.md",
+    "archive/nexters-1/index.md",
+    "archive/nexters-2/index.md",
+    "archive/ceos-1",
+    "blog/3분기 후일담/index.md",
+    "archive/무제 1.md",
+    "archive/nexters-1",
+    "archive/무제.md",
+    "archive/bankidz-5/index.md",
+    "archive/nexters-2",
     "archive/bankidz-6/index.md",
     "archive/bankidz-7/index.md",
     "archive/bankidz-8/index.md",
     "archive/bankidz-4/index.md",
-    "archive/bankidz-5/index.md",
     "archive/bankidz-5/assets/Pasted image 20250929000854.png",
     "archive/bankidz-5/assets",
     "archive/bankidz-6/assets/Pasted image 20250929000851.png",
@@ -189,15 +198,11 @@
     "archive/bankidz-8",
     "archive/bankidz-7",
     "archive/bankidz-6",
-    "archive/bankidz-5",
     "archive/bankidz-1/index.md",
     "archive/bankidz-1/assets/Pasted image 20250928235459.png",
     "archive/bankidz-2/index.md",
     "archive/bankidz-3/assets/Pasted image 20250928235447.png",
-    "archive/bankidz-3/assets",
     "archive/bankidz-2/assets/Pasted image 20250928235440.png",
-    "archive/bankidz-2/assets",
-    "blog/3분기 후일담/index.md",
     "React.md",
     "archive/bankidz-1/assets/Pasted image 20250928232535.png",
     "archive/bankidz-1/assets/Pasted image 20250928232528.png",
@@ -211,12 +216,8 @@
     "blog/3분기 후일담/2분기 후일담/index.md",
     "blog/3분기 후일담/1분기 후일담/index.md",
     "template/content.md",
-    "archive/무제.md",
     "archive/project-1/index.md",
     "2025-09-27.md",
-    "무제.canvas",
-    "blog/04-work-collection.md",
-    "blog/03-projects-collection.md",
-    "blog/02-blog-collection.md"
+    "무제.canvas"
   ]
 }
