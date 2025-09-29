@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "archive/bankidz-8/index.md",
+                "file": "archive/ceos-1/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "archive/bankidz-8/index.md",
+                "file": "archive/ceos-1/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "archive/bankidz-8/index.md",
+                "file": "archive/ceos-1/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "archive/bankidz-8/index.md",
+                "file": "archive/ceos-1/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -170,11 +170,12 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "5e0ce0987b052aed",
+  "active": "44418ebafa1560d1",
   "lastOpenFiles": [
-    "archive/ceos-1/신촌 IT창업동아리 CEOS 15기 16기 회 - 서류, 면접, 활동 후기.md",
-    "archive/nexters-1/index.md",
     "archive/nexters-2/index.md",
+    "archive/nexters-1/index.md",
+    "archive/ceos-1/index.md",
+    "archive/bankidz-8/index.md",
     "archive/ceos-1",
     "blog/3분기 후일담/index.md",
     "archive/무제 1.md",
@@ -184,7 +185,6 @@
     "archive/nexters-2",
     "archive/bankidz-6/index.md",
     "archive/bankidz-7/index.md",
-    "archive/bankidz-8/index.md",
     "archive/bankidz-4/index.md",
     "archive/bankidz-5/assets/Pasted image 20250929000854.png",
     "archive/bankidz-5/assets",
