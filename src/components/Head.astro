@@ -63,6 +63,7 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <!-- RSS Link -->
 <link rel="alternate" type="application/rss+xml" title={SITE.NAME} href={new URL("rss.xml", Astro.site)} />
 
+
 <script>
   import type { TransitionBeforeSwapEvent } from "astro:transitions/client";
   document.addEventListener("astro:before-swap", (e) =>
@@ -90,18 +91,21 @@ const { title, description, image = "/nano.png" } = Astro.props;
     lightThemeButton?.addEventListener("click", () => {
       localStorage.setItem("theme", "light");
       toggleTheme(false);
+      toggleUtterancesTheme();
     });
 
     const darkThemeButton = document.getElementById("dark-theme-button");
     darkThemeButton?.addEventListener("click", () => {
       localStorage.setItem("theme", "dark");
       toggleTheme(true);
+      toggleUtterancesTheme();
     });
 
     const systemThemeButton = document.getElementById("system-theme-button");
     systemThemeButton?.addEventListener("click", () => {
       localStorage.setItem("theme", "system");
       toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
+      toggleUtterancesTheme();
     });
 
     window.matchMedia("(prefers-color-scheme: dark)")
@@ -141,6 +145,17 @@ const { title, description, image = "/nano.png" } = Astro.props;
     });
   }
 
+function toggleUtterancesTheme() {
+  if (document.querySelector(".utterances-frame")) {
+    const theme = localStorage.getItem("theme") === "light" ? "github-light" : "github-dark";
+    const message = {
+      type: "set-theme",
+      theme,
+    };
+    const iframe = document.querySelector(".utterances-frame");
+    iframe?.contentWindow?.postMessage(message, "https://utteranc.es");
+  }
+}
 function toggleTheme(dark) {
     const css = document.createElement("style");
 

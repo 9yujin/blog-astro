@@ -6,6 +6,7 @@ import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
 import BackToPrev from "@components/BackToPrev.astro";
 import Link from "@components/Link.astro";
+import Utterances from "@components/Utterances.astro";
 
 export async function getStaticPaths() {
   const archives = (await getCollection("archive"))
@@ -59,6 +60,8 @@ const { Content } = await archive.render();
     <article class="">
       <Content />
     </article>
+    <div class="h-10"/>
+    <Utterances  />
     <div class="h-10"/>
     <div class="">
       <BackToPrev href="/archive">

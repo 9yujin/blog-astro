@@ -1,11 +1,10 @@
 ---
-import Container from "@components/Container.astro";
 import Link from "@components/Link.astro";
 import { SITE } from "@consts";
 ---
 
 <header>
-  <Container>
+  <div class="mx-auto max-w-screen-lg px-5">
     <div class="flex flex-wrap gap-y-2 justify-between" >
       <Link href="/" exact>
           {SITE.NAME}
@@ -20,7 +19,7 @@ import { SITE } from "@consts";
         </Link>
      
         <Link href="/archive">
-          -2023
+          (-2023)
         </Link>
 
       <!--   <Link href="/resume">
@@ -28,5 +27,5 @@ import { SITE } from "@consts";
         </Link> -->
       </nav>
     </div>
-  </Container>
+  </div>
 </header>
