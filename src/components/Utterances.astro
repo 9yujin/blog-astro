@@ -1,21 +1,2 @@
 <div id="utterances-container"></div>
 
-<script>
-  const script = document.createElement("script");
-  const container = document.querySelector("#utterances-container");
-  const currentTheme = localStorage.getItem("theme");
-
-
-  Object.entries({
-    src: "https://utteranc.es/client.js",
-    repo: "9yujin/blog-astro",
-    "issue-term": "pathname",
-    label: "post comments",
-    theme: currentTheme == "light" ? "github-light" : "github-dark",
-    crossorigin: "anonymous",
-  }).forEach(([key, value]) => {
-    script.setAttribute(key, value);
-  });
-
-  container?.appendChild(script);
-</script>
