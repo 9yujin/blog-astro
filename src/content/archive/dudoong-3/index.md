@@ -122,7 +122,7 @@ FOUT를 방지 하기 위해 즉시 필요한 웹폰트를 미리 로드할 수 
 
 보통 Header의 폰트로 사용하는 Gmarket Sans를 다이나믹 서브셋 파일로 변경만 해도 기존 1.3mb에서 408kb까지 용량을 줄일 수 있었다. 프리텐다드는 `@font-face`의 src에서 local을 통해 로컬 폰트파일을 사용하도록 되어있었기 때문에, 기존 용량이 얼마나 되는지 따로 알아보긴 귀찮아서 패스. 대부분 아이폰에 프리텐다드가 설치되어 있을 일은 별로 없다보니 프리텐다드 역시 다이나믹 서브셋 폰트로 바꾸어 주었다.
 
-> 처음부터 next/font를 적용해볼걸 하는 생각이 든다. 처음엔 구글폰트가 아닌 웹폰트를 사용했기 때문에 라이브러리 사용을 고려하지 않았다. 근데 로컬로 다운받아서 서브셋 폰트 만들고, 내 CDN에 올리고 등의 여러 시도를 하면서.. 이럴바엔 그냥 로컬폰트로 next/font를 적용하는게 맞지 않나? 하는 생각.
+(처음부터 next/font를 적용해볼걸 하는 생각이 든다. 처음엔 구글폰트가 아닌 웹폰트를 사용했기 때문에 라이브러리 사용을 고려하지 않았다. 근데 로컬로 다운받아서 서브셋 폰트 만들고, 내 CDN에 올리고 등의 여러 시도를 하면서.. 이럴바엔 그냥 로컬폰트로 next/font를 적용하는게 맞지 않나? 하는 생각.)
 
 ### 2. 이미지 최적화
 
@@ -131,7 +131,6 @@ FOUT를 방지 하기 위해 즉시 필요한 웹폰트를 미리 로드할 수 
 ![](https://blog.kakaocdn.net/dna/bivZMC/btsnim1Zo89/AAAAAAAAAAAAAAAAAAAAAHLlFw3gWUxPKN-RRzhOPqfNjWCjOXc4lpFB4p_PUw7q/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=2I47d75U5T3JvzMbSIzlnB4wqdw%3D)
 
 기본적으로 이미지 최적화를 위해서 이런 것들을 한다.
-
 - 이미지 사이즈를 보여줄 크기 또는 뷰포트에 맞게 변환해서 제공한다.
 - 용량이 작게 압축된 파일 확장자(WEBP)를 이용한다.
 - 처음에 모든 이미지를 로드하지 않고, 뷰포트에 보여질 것들만 lazy loading 한다.
@@ -201,8 +200,6 @@ const GlobalOverlay = dynamic(
 수정 전후 `pages/index.js` 모듈의 analyzer 결과이다. 빌드 파일에 무거운 svg들이 제거된것을 시각적으로 볼 수 있다.
 
 ![](https://blog.kakaocdn.net/dna/lnyrL/btsnvZqwIjP/AAAAAAAAAAAAAAAAAAAAAKV4ByetrwuIEnOOGVqzyJYjYMJ723kd7zREYYYjDqE3/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=IUHiG2xgR5pzyw90PyTVLXI%2BG%2FU%3D)
-
-전 / 후
 
 최적화 작업 전 후로 빌드된 JS파일의 크기가 눈에 보이게 줄어들었다.
 

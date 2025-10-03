@@ -2,7 +2,7 @@
 title: "[두둥] 2. 선언적인 코드 작성하기"
 description:
 date: 03/30/2023
-draft: true
+draft: false
 ---
 ![](https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FblUcye%2FbtsnxmzkW3Q%2FAAAAAAAAAAAAAAAAAAAAAFHhzyPrKQICRGcXKT-yYlXRPwnPHnFhqqOE0TBMxsXx%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1761922799%26allow_ip%3D%26allow_referer%3D%26signature%3Dy0JFaHRog2nZerWhFcg%252Bs%252Fbw9Yc%253D)
 
