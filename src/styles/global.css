@@ -193,3 +193,16 @@ article li {
   margin: 0;
   padding-inline-start: 0;
 }
+
+article :where(blockquote p:first-of-type)::before {
+  content: none;
+}
+
+article :where(blockquote) {
+  font-style: normal;
+  font-weight: normal;
+  border-inline-start-width: 0rem;
+  background-color: #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}

@@ -22,14 +22,14 @@ draft: false
   
 동기들과 플젝을 하면서 - 세오스 운영진으로 다음 기수를 모집하면서 - 에타 컴공게에서 몇몇 글들을 보면서 - 괜시리 겁을 먹거나 방황하는 사람들이 많다는걸 알게 됐다 (그러면서 '나는 어땠지' 라는 생각도 종종). 그 맥락에서 보면 난 굉장히 운이 좋은 케이스였다. 어쩌다보니 주변의 영향을 받아서 개발 공부를 시작하게 되었고, 이러쿵 저러쿵한 경험을 하면서 느꼈던 것들을 기록하고 공유하고 싶다.  
   
-- 라는 내용으로 지원서를 쓰기 시작했다.  
+\- 라는 내용으로 지원서를 쓰기 시작했다.  
 그리고 이건, 블로그에서 이어서 쓰는 1년동안 어떤 이러쿵 저러쿵을 했는지에 대한 회고글이 되겠다!!
 
-![](https://blog.kakaocdn.net/dna/Kk5Uz/btrLLzW0K8X/AAAAAAAAAAAAAAAAAAAAABRSabEhGUBtqzMl4cMngAxMoNAoHv243PCNSSdgKbRw/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=Kr6gGBzWsauyGe%2BJI6%2BVk%2BMVC34%3D)
+![](assets/Pasted%20image%2020251003210515.png)
 
 ---
 
-1. 전역 회고가 먼저
+## 1. 전역 회고가 먼저
 
 사실 '전역 후 1년 회고' 이전에 '전역 회고' 먼저 쓰려고 했다. 근데 미루고 미룬지 벌써 일년이 되어가기 때문에... 그래도 블로그에 쓰던 게 몇개 남아있는데, 이거라도 아까워서 옮기고 시작해야지.
 
@@ -52,8 +52,7 @@ draft: false
 > 멜론에는 ‘나만의 차트’ 라는 페이지가 있는데, 내가 몇년도 몇월에 어떤 노래를 많이 들었는지 보여준다. 가끔씩 들어가서 보면 되게 재밌다. 2018년 여름에는 데이식스 노래를 많이 들었고 2019년 초에는 정말 검정치마 노래밖에 없다. 고스락 공연을 앞두고 있는 달에는 항상 합주곡이 1등부터 4등이다. 중간중간에 멜론을 해지했을 때가 있는데, 이 시기에는 아무런 기록이 없다. 분명히 멜론이 아니라 다른 앱으로도 열심히 들었을 텐데. 그래서 지금이라도 어디다가 적어두기로 했다. 나중에 와서 봤을 때 ‘아, 군대에서 이런 노래를 많이 들었구나’ 라고 기억할 수 있게. 블로그를 시작하기 정말 잘했다.  
 >   
 > 
-> **짬을 채워갔다.  
-> **  
+> **짬을 채워갔다.**  
 > 2월은 엄청 추웠다. 툭하면 밖으로 나가서 주특기 관련 일을 시켰다. 중순에는 혹한기 훈련이 있었다. 코로나 덕분에 크게 빡센 훈련은 아니었다. 숙영을 했다. 동기 한 명과 같이 텐트를 썼다. 나름 재밌었다. 제설을 매우 자주 했다. 이건 숙영만큼 재밌지는 않다. 그래도 그때만의 느낌이 있었다. 음. 딱히 좋은 느낌은 아니네. 우글거리던 선임들도 조금씩 집으로 가기 시작했다. 일도 꽤 능숙해졌다. 그만큼 일이 많아졌다. 덕분에 시간이 빨리 갔다.  
 >   
 > 
@@ -63,9 +62,7 @@ draft: false
 > 4월이 되자 시간이 갑자기 멈췄다. 두 가지가 크게 불만이었다. 하나는 전역 전 휴가가 사라질 수 도 있다는 뜬소문과, 다른 하나는 휴가 티오가 매우 부족하다는 것. 이 꼬라지면 9월 전역은 무슨 휴가도 못나갈 것 같았다. 10월까지 버틸 자신이 도저히 없었다. 휴가를 나가고 싶었지만 자리는 몇 없었다. 그렇게 한번 밀리고 두 번 밀렸다. 결국 5월 말이 다 되서야 휴가를 다녀왔다. 두 번째 휴가였다.  
 >   
 > 
-> **전역 직전 (위의 두 개보다 좀 더 나중에 썼나보다)  
->   
-> **
+> **전역 직전 (위의 두 개보다 좀 더 나중에 썼나보다)**
 > 
 > 임시저장을 해놓았던 글을 지금 다시 보는데 굉장히 오만했다ㅋㅋ. 지금 생각하기엔 전혀 공부라고 할 수 없었던 공부였다. 애초에 책으로만 공부한다는 건 말이 안됐어.휴가 나가서 친구들을 만나서 많은 얘기를 들었다. 나는 뭘 하냬 저걸 하냬. 전역하고 복학하면 벌써 3학년에 졸업까지 2년 반이다. 지금 이 상태 그대로 시간만 보내면 그땐 정말 대형사고라는 생각이 들었다. 나는 거의 아무것도 못하는 말하는 감자거든. 부대 복귀하자마자 웹 개발 관련 책을 두권을 샀다. '노드 교과서'와 '리액트를 다루는 기술'. 매일 진도를 조금씩 나갔다. 일과 시간에 생활관 안에만 있어도 크게 문제가 되지 않는 짬이 되었다. 전공 관련 책들을 많이 샀다. 그렇다고 많이 읽은 건 아니구.  
 >   
@@ -78,7 +75,7 @@ draft: false
   
 그 즈음에 개인정비시간에 폰 받으면 벨로그 구경하는 취미가 생겼다. 지금까지도 계속 동기가 되어주는 글들을 그때 많이 읽었다. 보통은 다른 이름 모를 개발자들의 회고들이었음. [이 분의 회고글](https://velog.io/@danmin20/2020-%ED%9A%8C%EA%B3%A0-%EA%B0%9C%EB%B0%9C%EC%9D%84-%EC%8B%9C%EC%9E%91%ED%95%9C-%EC%A7%80-1%EB%85%84%EC%9D%B4-%EB%90%98%EC%97%88%EB%8B%A4)이나 [요 분의 회고글](https://eraser3031.tistory.com/21). 생각날때 종종 들어와 여러번 읽었던 것 같다. 나와 비슷한 또래의 대학생이신 것 같음. 꽤 많은걸 느꼈는데, '개발을 처음 시작해서 1년만에 이렇게 성장할 수 있구나' 라는 희망과, 한편으로는 군대에서 썩는동안 양질의 시간을 보낸 것에 대한 부러움이었다. 감사하게 생각한다.
 
-![](https://blog.kakaocdn.net/dna/c6nqun/btrKWBUSmN9/AAAAAAAAAAAAAAAAAAAAAKdDzoodPYVLNQz0It6pdS9Jyyz0koP33ig7UAGZKOLc/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=M6SrX8b1bpkzjGgxA8paKrrcwYQ%3D)
+![](assets/Pasted%20image%2020251003210527.png)
 
 (오랜만에 꺼내는 사진)
 
@@ -94,7 +91,7 @@ draft: false
   
 스파르타의 최대장점은 5주동안 강의를 듣고 다음 3주동안 개인 프로젝트를 진행한다는 것이다. 3주동안 개인 멘토를 붙여주는데, 운좋게 좋은 멘토분을 만나서 물어보고 싶은 것 다 여쭤볼 수 있는 좋은 기회였다. 같이 교육을 듣는 다른 사람들은 스파르타에서 배운대로 바닐라+jQuery와 Flask를 이용한 간단한 프로젝트로 마무리하는데, 난 군대에서부터 공부해왔던 리액트를 써보고 싶었다. 탑스터 이미지를 만들고 이미지를 공유하는 SNS 서비스를 구현했다. 개인 프로젝트로서 이정도 규모로 개발하는게 처음이었기 때문에 정말 좋은 경험이었다. 상태관리 구조때문에 많이 애먹고 고민을 할 수 있었다. 이벤트나 파일 등을 다루어보면서 자바스크립트에 대한 공부도 되었다. 웹디자인은 몇번 해보았지만, 실제 개발을 염두에 두고 작업한 디자인과 개발까지 했던 경험도 이후의 프로젝트에 큰 도움이 되었다. 강의는 모르겠지만 돈값은 내가 하기 나름인 것 같다.
 
-![](https://blog.kakaocdn.net/dna/bErl5i/btrLKGILy6B/AAAAAAAAAAAAAAAAAAAAAMhh1i7lKJrQMFeh2nY-HgPk4VPvdu3hdymHHfZ1OJzf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=HMcrtnNLPcAWKuVGV9CbPvy%2FjiY%3D)
+![](assets/Pasted%20image%2020251003210536.png)
 
 [FE 레포](https://github.com/9yujin/topster-frontend) / [BE 레포](https://github.com/9yujin/topster-backend) / [관련 포스팅](https://9yujin.tistory.com/search/%ED%83%91%EC%8A%A4%ED%84%B0)
 
@@ -107,10 +104,9 @@ draft: false
   
 또.. 라이징캠프를 하면서 **기술 블로그를 시작**하게 됐다. 매주 과제를 하고 정리를 해서 발표를 해야했다. 처음엔 벨로그에서 시작을 했는데, 시리즈 기능이 생각보다 불편하고 글씨들이 죄다 크게 나와서 티스토리로 옮겼다. 그 김에 꾸준히 기록하려고 노력중이다. 물론 잘 안되지만^^
 
-![](https://blog.kakaocdn.net/dna/b6VKzZ/btrLLjM3GCD/AAAAAAAAAAAAAAAAAAAAAIgm7V9Q_I6hkMf79mAkk9EAprGRUMJFUQRg4Nn26Mwo/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=D3l1Wgdl00D3dcj3YMg9VFVyVI4%3D)
+![](assets/Pasted%20image%2020251003210544.png)
 
 [BE 레포](https://github.com/9yujin/bunjang-clone-backend) / [관련 포스팅](https://9yujin.tistory.com/category/%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB/Server)  
-  
 
 ### 3. 개발동아리 고스락
 
@@ -118,8 +114,7 @@ draft: false
 
 [FE 레포](https://github.com/Gosrock/Ticket-Front-21st) / [Storybook 레포](https://github.com/Gosrock/Ticket-Storybook-21st) / [관련 포스팅[1]](https://9yujin.tistory.com/23?category=1025360)
 
-![](https://blog.kakaocdn.net/dna/dCvMcv/btrLLyKn11D/AAAAAAAAAAAAAAAAAAAAAAJXQflXCM5_nE-c-uNCCqG--RoBpfyFJfgvnRi3g6pi/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=E7fSH2ZgV5naee4kNC8%2FlBn0EKY%3D)
-
+![](assets/Pasted%20image%2020251003210551.png)
 https://github.com/Gosrock
 
   
