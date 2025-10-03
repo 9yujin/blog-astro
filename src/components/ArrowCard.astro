@@ -6,9 +6,10 @@ type Props = {
   entry: CollectionEntry<"blog"> | CollectionEntry<"archive">;
   padding?: string;
   arrow?: boolean;
+  date?: boolean;
 }
 
-const { entry, padding, arrow = true  } = Astro.props;
+const { entry, padding, arrow = true, date = true } = Astro.props;
 ---
 
 <a href={`/${entry.collection}/${entry.slug}`} class={`relative group flex flex-wrap ${padding} rounded-lg transition-all duration-300 ease-in-out`}>
@@ -17,9 +18,9 @@ const { entry, padding, arrow = true  } = Astro.props;
       {entry.data.title}
     </div>
     <div class="flex items-center gap-2 flex-shrink-0">
-      <div class="text-sm font-normal ">
+      {date && <div class="text-sm font-normal ">
         <FormattedDate date={entry.data.date} />
-      </div>
+      </div>}
       {arrow && <svg 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 24 24"

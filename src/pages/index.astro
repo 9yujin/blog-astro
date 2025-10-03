@@ -39,90 +39,38 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="">
-            머리에 휙휙 지나가는 것들을 남기기 위해 글을 씁니다. 퇴고를 최대한 덜 하려고 노력합니다(전문가도 아닌데 자꾸 글에 힘이 들어가네요).
-            프론트엔드 개발을 좋아합니다. 하나의 멋진 제품을 만드는걸 좋아합니다.
-            취향이 들어가고, 디테일이 있는 것들을 좋아합니다.
+            글을 쓰고 공간을 단장합니다.<br/>
+            웹 개발을 도구로 멋진 제품을 만듭니다.<br/>
+            일에 애정을 가지고 몰입하는 것을 좋아합니다.<br/>
+            밴드셋 공연을 좋아합니다.<br/>
           </p>
           <p class="">
-            웹 개발 이야기 또는 개인적인 생각과 경험을 씁니다.
-            학생 때 쓴 글들은 <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
+            제가 좋아하는 것들로 글을 써요. <br/>
+            학생 때 쓴 글들은 <Link href="https://9yu.netlify.app/archive/">
               (-2023)
             </Link>에 모아두었습니다.  
           </p>
         </article>
       </section>
 
-      <section class="space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent posts
-          </h5>
-          <!-- <Link href="/blog">
-            See all posts
-          </Link> -->
-        </div>
+      <section class="space-y-2">
+        <h5 class="font-semibold text-black dark:text-white">
+          Recent posts
+        </h5>
         <ul class="flex flex-col">
           {blog.map(post => (
             <li>
-              <ArrowCard entry={post} padding="py-1.5" arrow={false}/>
+              <ArrowCard entry={post} padding="py-1.5" arrow={false} date={false}/>
             </li>
           ))}
         </ul>
+        <Link href="/blog" underline>
+          more →
+        </Link>
       </section>
 
-      <!--
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Work Experience
-          </h5>
-          <Link href="/work">
-            See all work
-          </Link>
-        </div>
-        <ul class="flex flex-col space-y-4">
-          {work.map(entry => (
-            <li>
-              <div class="text-sm opacity-75">
-                {dateRange(entry.data.dateStart, entry.data.dateEnd)}
-              </div>
-              <div class="font-semibold text-black dark:text-white">
-                {entry.data.company}
-              </div>
-              <div class="text-sm opacity-75">
-                {entry.data.role}
-              </div>
-              <article>
-                <entry.Content />
-              </article>
-            </li>
-          ))}
-        </ul>
-      </section>
-       -->
-
-      <!-- 
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
-          </h5>
-          <Link href="/projects">
-            See all projects
-          </Link>
-        </div>
-        <ul class="flex flex-col gap-4">
-          {projects.map(project => (
-            <li>
-              <ArrowCard entry={project} />
-            </li>
-          ))}
-        </ul>
-      </section>
-      -->
-
-      <section class="space-y-4">
-        <h5 class="font-semibold text-black dark:text-white">
+      <section >
+        <h5 class="font-semibold text-black dark:text-white h-4">
           Contacts
         </h5>
         <article>

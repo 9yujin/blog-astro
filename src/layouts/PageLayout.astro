@@ -16,7 +16,7 @@ const { title, description } = Astro.props;
 <html lang="en">
   <head>
     <Head title={`${title} | ${SITE.NAME}`} description={description} />
-    <script>
+    <!-- <script>
       const script = document.createElement("script");
       const container = document.querySelector("#utterances-container");
       const currentTheme = localStorage.getItem("theme");
@@ -34,7 +34,7 @@ const { title, description } = Astro.props;
       });
     
       container?.appendChild(script);
-    </script>
+    </script> -->
   </head>
   <body>
     <Header />
