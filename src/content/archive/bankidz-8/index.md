@@ -5,7 +5,7 @@ date: 11/7/2022
 draft: false
 ---
 
-![](assets/Pasted%20image%2020250929000848.png)
+![Pasted image 20250929000848](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/Pasted%20image%2020250929000848.png)
 
 사용자가 서비스를 사용하며 느끼는 경험의 질은 디테일에서 나온다고 생각한다. 많은 동기들이 프론트앤드를 공부하다 백엔드로 떠난 것도 그 디테일을 챙기느라 지쳐서였다. 반면 나는 그 디테일에 관심이 있었다. 사용자 경험에 대해서 계속 고민하는게 재밌었다. 다행이라고 해야 하나. 덕분에 정말 재밌게 공부하고 있다. 요즘은 컨퍼런스 영상이나 아티클 따위의 컨텐츠를 보면서 상태나 컴포넌트 관리에 특히 관심을 갖고 있다. 중간고사만 끝나면 바로 이 프로젝트에도 도입해보고 싶은 것들이 많다!!
 
@@ -19,7 +19,8 @@ draft: false
 
 프로젝트의 전체적인 레이아웃을 잡을 때부터 최대한 '앱'스럽게 해보고자 했다.
 
-![](https://blog.kakaocdn.net/dna/mHAb1/btrOCsH8MDE/AAAAAAAAAAAAAAAAAAAAAP7CrsVgOAfY_HATFYDyCIPQ5yXMjOzjlpc3DW9SL-a8/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=JKOCnZDQNcgCrSmf%2F5%2B1ab81dnQ%3D)
+![Pasted image 20251007144710](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/Pasted%20image%2020251007144710.png)
+
 
 Background / Foreground
 
@@ -63,7 +64,7 @@ function BackgroundTemplate({ children }: BackgroundTemplateProps) {
 
 구글에 정보가 생각보다 별로 없었고, 내 경우처럼 완벽히 앱처럼 동작하는 트랜지션을 구현해본 기록을 보기 힘들었다. 그래서 더 세세히 기록을 하려고 노력했다. 위의 링크된 글에서 자세한 설명을 볼 수 있다.
 
-![](https://blog.kakaocdn.net/dna/dt8Kns/btrQqM5JvZS/AAAAAAAAAAAAAAAAAAAAAKa0p_9YW9g3NSrflxA1hVxVNf7DY3x4jBDCwCNheuNZ/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=dIgTKZ6Bc2MRrIgCYoNdeiLfsPc%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-8-1.gif)
 
 바로 위에서 작성했던 `Foreground` 페이지와 `Background` 페이지 간의 트랜지션을 경험할 수 있다. 처음 프로젝트를 구성할 때부터 앱과 같은 UX를 고려한 덕분에 더 수월하게 작업할 수 있었다.
 
@@ -79,7 +80,7 @@ function BackgroundTemplate({ children }: BackgroundTemplateProps) {
 
 앱에서 사용하는 대표적인 UI 컴포넌트이다. 뱅키즈 내에서도 굉장히 많은 상황에 바텀시트를 활용하고 있다. 사용자의 액션을 위해 화면 하단에서 올라오는 컴포넌트를 말한다.
 
-![](https://blog.kakaocdn.net/dna/IKl08/btrPPMK1CSC/AAAAAAAAAAAAAAAAAAAAALD7T2Y0D6CFhG-opkL1UWagnj1-brilQuCFdocX4Egg/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=NRjqTVIAUL%2F2scFi4O98owc9TuA%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-8-2.gif)
 
 트랜지션그룹과 바텀시트 애니메이션을 같이 보니 부드럽게 이어지는게 굉장히 마음에 든다.
 
@@ -87,7 +88,7 @@ function BackgroundTemplate({ children }: BackgroundTemplateProps) {
 
 [돈길 계약하기 과정](https://9yujin.tistory.com/70)에서 사용하는 바텀시트 이외에 서비스 곳곳에서 사용하는 모든 바텀시트는 전역으로 관리되고 있다. 고스락 2차 프로젝트에서 모달 컴포넌트를 전역으로 관리하는 방식과 비슷하다. 때문에 따로 기록을 하진 않았음.
 
-![](https://blog.kakaocdn.net/dna/8j7Yc/btrQrrtjdOg/AAAAAAAAAAAAAAAAAAAAALSagsrnhIZv4HEu3wPrK_OJntT4yRwaCRdSsF5f3ilK/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=AEmpmCU8anRYUY1ylLpKlk3Rb4k%3D)
+![Pasted image 20251007144952](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/Pasted%20image%2020251007144952.png)
 
 기획과 디자인이 계속 늘어나고 수정되면서 바텀시트들의 종류도 많아졌다. UI와 액션에 따라 컴포넌트를 적절히 분류하고 사용하고 있다.
 
@@ -112,13 +113,14 @@ const openExpiredNoticeSheet = (handler: () => void) => {
 
 사용자가 최대한 귀찮음을 느끼지 않도록 하기 위해 불필요한 액션을 줄이도록 노력했다. 아래는 사용자에게 다양한 입력을 받아야 하는 온보딩과 돈길 계약하기 과정이다.
 
+
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="https://blog.kakaocdn.net/dna/dkCGZe/btrQyWsneC6/AAAAAAAAAAAAAAAAAAAAAP4jlzqyT6W6Zf9pEU6FtvbblQwpte1q4FaKZ36peak3/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=qG3WOGFvCZwQN%2BtW9teikRPRFL4%3D" />
+      <img src="https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-8-4.gif" />
     </td>
     <td align="center" width="50%">
-      <img src="https://blog.kakaocdn.net/dna/cBVr4x/btrQr3GGjzZ/AAAAAAAAAAAAAAAAAAAAAGvJgM16m556smYvYfU2ln1J9rxRz3wmLwbNP1MDZk0b/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=Gj6KMOGy%2BdQGanVTe%2B8%2BJZl%2BVzU%3D" />
+      <img src="https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-8-5.gif" />
     </td>
   </tr>
 </table>
@@ -131,13 +133,13 @@ const openExpiredNoticeSheet = (handler: () => void) => {
 
 뱅키즈에서는 해당사항이 없었지만, 모바일 웹을 구현하면서 다들 한번쯤 만났을 문제가 있다. 키패드가 올라올때 안드로이드 브라우저와 사파리 브라우저는 다르게 작동한다. 하단 버튼을 fix 등으로 고정했을때는 뷰포트의 하단에 자리잡게 된다. 하지만 안드로이드 브라우저에서는 키패드가 올라올때, 뷰포트가 화면에서 키패드를 제외한 부분으로 바뀐다. 그렇기 때문에 하단에 고정한 버튼이 키패드 위로 올라오게 되는 것. 물론 토스 같은 서비스를 보면 키패드 위에 버튼이 올라오도록 의도된 디자인이 있지만, 그렇지 않은 경우에는 상당한 멘붕 포인트가 된다.
 
-![](https://blog.kakaocdn.net/dna/QOMHk/btrQqmM4Pf6/AAAAAAAAAAAAAAAAAAAAAHSA06Fv0qZuf8Ous00ffaGrj4NlIEqEZgXCn9bjruqR/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=040VFp7uEz%2BDK%2FNCRPDkt3gZh5g%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bandkiz-8-3.jpeg)
 
 고스락 2차 프로젝트에서 전화번호와 이름을 받는 페이지이다. 안드로이드는 IOS와 달리, 사진과 같이 하단 고정 버튼이 키패드 위로 올라온다. 이 때 버튼이 input Form 부분을 가리는 경우가 있다. 개발자 대부분이 아이폰을 사용했기 때문에 QA 이전에는 미처 알지 못했던 부분이었다. 뷰포트의 높이가 바뀌는걸 감지해서 일정 높이 이하일 때는 키패드가 올라왔다고 판단해 버튼을 보여주지 않는 것으로 해결했다. 버튼이 없더라도 정해진 글자수만큼 입력하면 자동으로 blur 되도록 처리했기 때문에 불편함은 전혀 없었다.
 
 ### 5. 토글 버튼 (로컬 스토리지 캐싱)
 
-![](https://blog.kakaocdn.net/dna/1Q9GX/btrQAv86b9z/AAAAAAAAAAAAAAAAAAAAAGRsIn0ptmPSdi_xYqCt2bdkkZjPdU20YFraNc5Nrd_L/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=1qfeJNmYBx4Eibclef7C1gqiH6s%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bandkidz-8-3.gif)
 
 푸쉬 알림 동의를 받는 설정 페이지이다. 앱과 같은 토글 디자인과 애니메이션을 구현했다.
 
