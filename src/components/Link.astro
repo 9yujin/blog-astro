@@ -19,7 +19,7 @@ const { href, external, underline, exact = false, ...rest } = Astro.props;
   href={href} 
   target={ external ? "_blank" : "_self" } 
   class={cn(
-    "inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out",
+    "inline-block decoration-black/15 dark:decoration-white/30 hover:decoration-black/25 hover:dark:decoration-white/50 text-current hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out focus:underline focus:decoration-dashed",
     (underline || (exact ? Astro.url.pathname === href : Astro.url.pathname.startsWith(href))) && "underline underline-offset-2",
     (exact ? Astro.url.pathname === href : Astro.url.pathname.startsWith(href)) && "text-black dark:text-white decoration-black dark:decoration-white"
   )}

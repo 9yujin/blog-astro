@@ -4,7 +4,7 @@ description:
 date: 10/7/2022
 draft: false
 ---
-![](https://blog.kakaocdn.net/dna/7DAgu/btrMS3cvqjP/AAAAAAAAAAAAAAAAAAAAAMFOLSKshLuXz9WTvSjAsh9HxJTWZPQIhLjBZZ6iltl3/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=AW5PZAxRAc6bqMBXDVQt%2B14%2B3uM%3D)
+![](assets/Pasted%20image%2020251007195933.png)
 
 특별할건 없는 단순 구현이지만 많이 고민하고 노력한게 아까워서 적는 포스팅. 앱의 가장 핵심인 돈길을 생성하는 과정을 '돈길 계약하기'라는 워딩을 통해 아이들도 재미있게 느낄 수 있도록 했다. 총 다섯개의 단계를 밟아 정보를 입력하고, 마지막에 사인을 하고 제출하면 계약 영수증이 보여지는 형식이다. 기획과 디자인팀의 노고가 느껴진다. 그리고 저걸 구현한 나도... 기능 하나하나에 많은 공을 들였어서 그런지 특히 애정이 있는 뷰들이다.  
   
@@ -13,7 +13,7 @@ draft: false
 
 ### 1. 바텀시트 라이브러리 - 바텀시트 바깥 부분 터치 처리 커스텀훅
 
-![](https://blog.kakaocdn.net/dna/zqY2a/btrNmzIYIxN/AAAAAAAAAAAAAAAAAAAAACqYx_nhqK4Pydo_f61Qr7zJ6gwOCdbGxPkOgCL6Ecoi/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=whWBj2oNe6epnYiTRkKh5PhD5Yk%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-4-1.gif)
 
 바텀시트의 바깥부분을 눌렀을때는 시트가 닫힌다. 근데 해당 인풋부분을 눌렀을떈 그대로 인풋에 포커스가 유지되면서 시트도 계속 올라와 있어야 한다. 그 로직을 커스텀훅으로 따로 빼 컴포넌트와 분리를 해주었다.
 
@@ -85,7 +85,7 @@ export default Step3;
 
 ### 2. 계산기를 형상화한 금액 입력 커스텀 키보드
 
-![](https://blog.kakaocdn.net/dna/G5xV7/btrNqMGHMJf/AAAAAAAAAAAAAAAAAAAAABLUF6yKWcAAITRllhk7S1_8GfgY54XyMGg7UApw-dxV/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=23gSLG%2BRP8XY2SwtBw%2FP90tczTE%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-4-2.gif)
 
 목표 금액을 입력할 수 있는 커스텀 키보드이다. 아이들이 재미있게 돈길을 계약할 수 있도록 계산기을 형상화 한 디자인이다. 기획에서 요구한 점이 꽤 특이했다. 각 금액에 해당하는 지폐 모양의 버튼을 누르면 그만큼의 돈이 추가된다. 오른쪽 아래 두 버튼 중, 왼쪽을 누르면 가장 최근에 추가한 금액만큼 지워진다. 예를 들어 500원, 5000원, 만원 순서대로 눌렀다가 취소하면 : 15500 → 5500 → 500 → x 순으로 돌아가게 되는 것.  
   
@@ -245,10 +245,9 @@ function Step3({ currentStep }: { currentStep: number }) {
 
 ### 4. 스와이프 저금액 입력
 
-![](https://blog.kakaocdn.net/dna/b301QM/btrNtEv6rP0/AAAAAAAAAAAAAAAAAAAAAEj-igeoNmc_O94yfFZr1ugT1ow-u8HvUlJ8fgIGC1Nj/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=vpqFAMe20eYqgfKtLt6u9Vp1tHI%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-4-3.gif)
 
 저 작은 페이지 하나에서 고비가 세 군데나 있었다.
-
 1. 목표 저금액에 따라서 **매주 저금액의 상한, 하한**이 정해진다. 근데 이자부스터가 껴있어서 그걸 계산하는 방법을 되게 많이 고민해야 했음.
 2. 스와이프하면서 입력된 매주 저금액이 계속 바뀌는데, **이자부스터에 따른 추가 저금액과 끝나는 주**를 계산을 해야 했다.
 3. 그리고 무엇보다 저 **스와이프 바 css**가 제일 문제. 하지만 디자인이 제일 중요하니까!!
@@ -344,7 +343,7 @@ position을 absolute로 두고, left 속성을 직접 주고 이동시켰다. �
 
 ### 5. 사인 전송하기 (Presigned Url
 
-![](https://blog.kakaocdn.net/dna/m9L1x/btrNY1XQfN5/AAAAAAAAAAAAAAAAAAAAAPxCYeMj2Yy0Nvtb5rT0k3IMlrImB560gWVhs-xTuE8s/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=Lg0JD30upsjtlidG%2Flw8j2N%2FBwM%3D)
+![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/bankidz-4-4.gif)
 
 사인을 하고 서버에 전송한다. `react-signature-canvas` 라이브러리를 사용했다.
 

@@ -92,7 +92,7 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
+  @apply bg-stone-100 dark:bg-[#232425];
   @apply text-black/50 dark:text-white/75;
 }
 
@@ -103,19 +103,15 @@ header {
   /* @apply backdrop-blur-sm; */
   background: linear-gradient(
     to bottom,
-    theme("colors.stone.100" / 100%) 0%,
-    theme("colors.stone.100" / 80%) 20%,
-    theme("colors.stone.100" / 50%) 60%,
+    theme("colors.stone.100" / 80%) 0%,
     theme("colors.stone.100" / 0%) 100%
   );
 }
 html.dark header {
   background: linear-gradient(
     to bottom,
-    theme("colors.stone.900" / 100%) 0%,
-    theme("colors.stone.900" / 80%) 20%,
-    theme("colors.stone.900" / 50%) 60%,
-    theme("colors.stone.900" / 0%) 100%
+    rgba(35, 36, 37, 0.8) 0%,
+    rgba(35, 36, 37, 0) 100%
   );
 }
 
@@ -141,10 +137,13 @@ article {
     @apply font-sans underline underline-offset-2;
     color: rgb(255, 85, 68);
     text-decoration-color: rgb(255, 85, 68, 0.4);
+    .dark & {
+      color: #cb4d4c;
+      text-decoration-color: rgb(255, 85, 68, 0.4);
+    }
     @apply transition-colors duration-300 ease-in-out;
   }
   article a:hover {
-    color: rgb(255, 85, 68);
     text-decoration-color: rgb(255, 85, 68, 0.7);
   }
 }
@@ -167,7 +166,7 @@ html.scrolled #back-to-top {
 }
 
 article img {
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 article .video-container {
@@ -183,6 +182,7 @@ article .video-container iframe {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 12px;
 }
 
 article ul {
@@ -204,5 +204,5 @@ article :where(blockquote) {
   border-inline-start-width: 0rem;
   background-color: #e5e7eb;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
 }
