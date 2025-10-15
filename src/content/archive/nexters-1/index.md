@@ -8,13 +8,13 @@ CEOS 지원 후기를 거의 두 기수가 끝나갈때 즈음 작성했는데, 
 
 ---
 
-![](https://blog.kakaocdn.net/dna/uJb4A/btrWzRmRe8w/AAAAAAAAAAAAAAAAAAAAAPyalSCbYUi-tse1SPhJFF1Q8S_pKK3_pzrqDvXj_5Jh/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=Rieto8Iy6nbOTM7U5uO%2BS3hPOz4%3D)
+![Pasted image 20251016170007](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170007.png)
 
 넥스터즈라는 동아리를 알게 된건 1년 전쯤이다. 작년 이맘때에 개발 공부를 시작하면서 여러 동아리들을 찾아보았었다. 아무런 포폴도 실력도 없었던 시기였기 때문에, 어떤 동아리들을 보아도 그림의 떡이다. 그 중에서도 넥스터즈는 완전 높아보였다. 블로그나 에타에 올라온 글들에서 '제일 들어가기 어렵다', '1티어다' 하는 말들을 언뜻 봤었다. 그런 티어는 누구 맘대로 정하는지는 모르겠지만 직장인들도 많이 참여하기 때문에 붙기 많이 어렵고 수준이 높다는 뜻이겠거니. 그래서 마냥 멀게만 느껴졌다.
 
 넥스터즈는 지금까지 해왔던 동아리와는 다르게 두 기수 동안 프로젝트에 참여해야 수료로 처리된다. 그 이후엔 언제든지 다시 참여할 수 있는 기회가 생긴다. 그 외에 컨퍼런스나 스터디 등이 자율적으로 진행되는 '**커뮤니티**'를 표방하고 있다는 점이 마음에 들었다. 그래서인지 현직자의 비율이 꽤 높다. 기존 멤버가 아니어도 신규 기수 중에서 절반 이상이 현직자인것 같다.
 
-![](https://blog.kakaocdn.net/dna/9bOWD/btrWzWurabn/AAAAAAAAAAAAAAAAAAAAAF9PjyhViyUstKraCxEm90rL_wOBIGeVJNNsZZ6F__Ui/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=HOXUDX3BnYKYZFV8gRJ3JUBwVNs%3D)
+![Pasted image 20251016170013](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170013.png)
 
 그러고 1년동안 나름 열심히 살아왔다. 넥스터즈 22기 모집이 열렸고, 방학 때 한번 빡세게 살아보자는 마음가짐으로 지원을 했다. 휴학을 하고 다른 개발동아리를 하고 있는 친구들이 수준높은 현직자분들과 함께 프로젝트하면서 강하게 크는게 부러웠다. 그런 내용으로 서류를 작성하기 시작했다.
 
@@ -30,13 +30,13 @@ CEOS 지원 후기를 거의 두 기수가 끝나갈때 즈음 작성했는데, 
 
 이 외에 자신이 주도적으로 참여한 프로젝트 및 대외활동, 깃허브 주소와 추가 포트폴리오 주소를 적어내는 문항이 있다. 블로그와 포트폴리오 정리에 자주 시간을 써왔기 때문에 어느정도 도움이 될거라는 확신이 있었다. 일단 내가 보기엔 그런데, 남이 보기엔 어떨지 모르겠네. 서류심사에 직접적인 연관은 없더라도, 평소에 했던 고민과 삽질을 기록해온게 많은 면에서 도움이 된다. 포트폴리오와 블로그가 내 지원서 내용에 어느정도 증거가 될 수 있다. 또 지원서를 작성할 때도 내 블로그를 다시 읽으면서 쓰니 한결 수월했다. 다른 잘하시는 분들의 블로그를 보면 초라해지는 내용이지만, 그런건 별로 중요하지 않은 것 같다.
 
-![](https://blog.kakaocdn.net/dna/cfc9JG/btrWDbDQ7kf/AAAAAAAAAAAAAAAAAAAAACGiIT7QOwkxcQLnyHVvaRtYaknCSNmcGA_ucMAiGY2X/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=yRiRPZeQpISnt1UT5oMBZghHygs%3D)
+![Pasted image 20251016170020](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170020.png)
 
 12시가 되기 직전에 서류 합격 메일이 왔다. 얼마나 많은 지원자들이 몰렸을지.. 벌써부터 면접이 긴장되는 메일이었다. 자기 입으로 최고라고 말할 수 있는 근거 있는 자신감. 크으으.. 코오오..👍
 
 ### 2. 면접
 
-![](https://blog.kakaocdn.net/dna/3vAT6/btrWzUQ6Jl6/AAAAAAAAAAAAAAAAAAAAAK1BPEWhMyqMGzdZ_ZNECly4YN-seWIJTJi9kIoFQovd/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=zuZSHpgNvwKb6c5WtQMq05sH%2Fcg%3D)
+![Pasted image 20251016170025](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170025.png)
 
 예고된대로 20분정도의 시간이 딱 정해져서 공지된다. 줌으로 비대면 인터뷰를 진행했다. 이전에 봤던 블로그에선 강남쪽에 있는 사무실에서 대면으로 한대서 기대 반 긴장 반 갖고 있었지만..운영진분들과 이전 기수 프론트엔드, 총 세네분 정도가 면접관+서기로 들어와계셨다. 나 포함 두명이 그룹으로 함께 인터뷰를 했다. 
 
@@ -58,7 +58,7 @@ CEOS 지원 후기를 거의 두 기수가 끝나갈때 즈음 작성했는데, 
 
 ### 3. 최종 합격
 
-![](https://blog.kakaocdn.net/dna/cHrjeJ/btrWD4qTUAZ/AAAAAAAAAAAAAAAAAAAAABObhgr9mqFmjGbHlHkRXmf8mys9E5XwMTk3Iu86bBym/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=6PICImTbCzbajPG1ijNN3hwGVCs%3D)
+![Pasted image 20251016170031](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170031.png)
 
 겨우 문 닫고 들어갔다. 학점은 항상 문열고 들어가더니... 넥스터즈 이전까지 인턴이나 동아리나 떨어진게 있었어서 자존감이 약간 내려갔었는데 다시 확 올라가는 날이었다. 완전 맛있는 양꼬치까지 먹어서 더 행복했음.
 

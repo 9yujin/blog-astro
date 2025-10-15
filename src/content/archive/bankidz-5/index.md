@@ -4,7 +4,7 @@ description:
 date: 10/13/2022
 draft: false
 ---
-![](assets/Pasted%20image%2020250929000854.png)
+![Pasted image 20250928235440](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020250928235440.png)
 
 이전에 쓴 포스팅들을 보면 알겠지만 유튜브나 블로그들에서 리액트 쿼리에 대한 컨텐츠들을 접했고 고스락 프로젝트에 도입을 했었다. 서버에서 받아온 데이터를 캐싱하거나, 에러 핸들링이 편하게 된다는 점이 너무너무 좋았다.
 

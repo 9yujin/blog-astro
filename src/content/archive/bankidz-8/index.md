@@ -4,8 +4,7 @@ description:
 date: 11/7/2022
 draft: false
 ---
-
-![Pasted image 20250929000848](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/Pasted%20image%2020250929000848.png)
+![Pasted image 20250928235440](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020250928235440.png)
 
 사용자가 서비스를 사용하며 느끼는 경험의 질은 디테일에서 나온다고 생각한다. 많은 동기들이 프론트앤드를 공부하다 백엔드로 떠난 것도 그 디테일을 챙기느라 지쳐서였다. 반면 나는 그 디테일에 관심이 있었다. 사용자 경험에 대해서 계속 고민하는게 재밌었다. 다행이라고 해야 하나. 덕분에 정말 재밌게 공부하고 있다. 요즘은 컨퍼런스 영상이나 아티클 따위의 컨텐츠를 보면서 상태나 컴포넌트 관리에 특히 관심을 갖고 있다. 중간고사만 끝나면 바로 이 프로젝트에도 도입해보고 싶은 것들이 많다!!
 

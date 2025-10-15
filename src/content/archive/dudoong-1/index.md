@@ -27,25 +27,25 @@ draft: false
 
 사용자는 인터파크 티켓이나 예스24와 같이 다양한 공연이 올라오고 다양한 티켓을 구매할 수 있다. 관리자는 다양한 공연과 티켓을 생성하고 등록하고 판매할 수 있다. 그리고 판매된 티켓들을 관리하고 통계를 볼 수 있다. 기존의 서비스를 플랫폼으로 확장했다고 생각하면 쉽다.
 
-![](https://blog.kakaocdn.net/dna/uniWR/btr2H6LmaF7/AAAAAAAAAAAAAAAAAAAAAL4XUhkyVy_mAyXN-o2yMjM-w0Y_DV4v1Ov_w6PViIzW/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=nKXGQ5CotOEoqB7w7nkxUhjbeW0%3D)
+![Pasted image 20251016170612](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170612.png)
 
 볼륨이 배로 커진만큼 필요한 기능들을 **IA와 같이 구조화**해봤다. 개발을 하면서도 많이 바뀌어서 이 이미지와는 달라진 점이 조금 있을 수 있다. 이전보다 어드민 기능이 중요해졌다. 오히려 어드민이 메인이라 봐도 무방할 정도. 실제로 개발기간도 어드민에 더 많이 할애했던 것 같다.
 
-![](https://blog.kakaocdn.net/dna/brfRhA/btr2PTYiXTi/AAAAAAAAAAAAAAAAAAAAADwV750iQ0lMbl7xBmy8vnapNmmsFFrgv78xhMrjFsdU/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=GC%2BIAYX4m1qHUdiJaTQSO9n2U1I%3D)
+![Pasted image 20251016170625](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170625.png)
 
-![](https://blog.kakaocdn.net/dna/cc609h/btr2PR0uSuR/AAAAAAAAAAAAAAAAAAAAAGKeagvogydKc20V15H1jU_4kEWa9V0x-YyoOgViZn9i/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=faodez50Gmk%2BdrkZXJtt6YmHGsw%3D)
+![Pasted image 20251016170628](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170628.png)
 
 곧바로 **디자인 작업** 우선으로 들어갔다. 이전보다 뷰가 두배 이상으로 많아졌다. 디자인하는게 너무 힘들었다. 뷰 디자인을 뽑는건 크게 문제가 되지 않았지만, 여러 케이스마다 다른 화면들을 다 만들어내는게 스트레스였다. 얼른 끝내고 개발해야하는데 이런 부분에 시간을 쓰는게 답답했음. 2-3주 정도는 피그마에 상주하면서 작업했다.
 
 메인 컬러는 보라색. 테마는 라이트 모드. 이전까지는 다크모드 팔레트를 썼는데, 어두운 배경에 은근 색을 쓰기 힘들더라. 보라색을 쓴 이유는… 그냥 보라색을 좋아해서. 처음엔 파스텔 느낌의 라일락 색을 사용했다. 디자인을 뽑으면서 보니 색들이 다 밋밋하고 채도가 낮은 듯 했다. 마켓 컬리 느낌을 생각하며 더 진한 보라색으로 팔레트를 수정했다. 결과적으로 나쁘지 않은 것 같음.
 
-![](https://blog.kakaocdn.net/dna/V0nM7/btr2FepoQRL/AAAAAAAAAAAAAAAAAAAAAPF_tYhL7lb9Fa7oiHMjMh5K-rinEMEtyopqyh7vRaEp/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=YBPq4ukx9bBVeaE6fPbzT4WdKY0%3D)
+![Pasted image 20251016170633](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170633.png)
 
-![](https://blog.kakaocdn.net/dna/0N6NF/btr2OtZ7sRs/AAAAAAAAAAAAAAAAAAAAAHVQ7JhJeMWIgeettxjicnKL5qqjqAbX0WNKNDalnAW5/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=4GBPnzaBrthnAn9LAudrTstxKr4%3D)
+![Pasted image 20251016170638](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170638.png)
 
 디자인 단계에서부터 개발을 고려하며 작업했다. **컴포넌트 단위**로 개발하기에 최대한 재활용이 가능하고 prop으로 다루기 수월하길 원했다. 피그마에서 디자인할 때부터 component varient와 auto layout을 적극적으로 사용했다. 실제로 개발된 컴포넌트의 구조도 피그마에서 디자인한 레이어 구조와 거의 동일하다. 후반에 디자인이 많이 수정되면서 조금 의미가 퇴색된 점은 아쉽지만 정말 큰 의미가 있었다. 다음 프로젝트에서는 더 나아질거라 자신할 수 있다!! [스토리북](https://gosrock.github.io/DuDoong-Front/)
 
-![](https://blog.kakaocdn.net/dna/cXKgBZ/btr2H7i9IOH/AAAAAAAAAAAAAAAAAAAAAAU969zbEuD6psEgjm1LwriCjjhjYZrB3ENOQhs-Oq2Z/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=ZbYMG1qXYxNKI7VwJ0Sn6cbSwVY%3D)
+![Pasted image 20251016170641](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170641.png)
 
 뷰들이 모두 나온 뒤엔 **플로우를 정리**했다. 이렇게 구성해놓고 보니 만드는 서비스에 이해도가 높아져 더 개발하기 수월했던 것 같다. 기획이 조금씩 복잡해지면서 이렇게 시각화해서 보는게 중요하다. 특히 발급된 티켓과, 옵션, 주문 사이의 관계가 복잡해져서 머리가 아팠던 기억이 있다.
 
@@ -59,11 +59,11 @@ draft: false
 
 새내기에게는 티켓을 무료로 주며 동아리를 홍보하는게 일반적이다. 추가로 학번을 입력받아 검증을 하거나 소모임 신청을 받는 경우도 있다. 이럴 때 티켓에 옵션을 달아 입력할 수 있도록 했다. 옵션은 주관식 또는 예/아니오 문항을 선택해 생성할 수 있다. 예/아니오 문항에는 ‘예’를 선택했을 때 결제금액을 추가할 수 있다. 뒷풀이 희망자에게 예약비를 미리 받을 때를 상상하고 추가한 기획이다.
 
-![](https://blog.kakaocdn.net/dna/92Zle/btr2TChpCkO/AAAAAAAAAAAAAAAAAAAAAExZv00xJb23zhHpYdx8r0lu6sMuUDGNyvC6MmOPJwn-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=ta7EUjuOXEbRnoQDz%2B2sCW2QQBY%3D)
+![Pasted image 20251016170646](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170646.png)
 
 공연 상세 페이지에서 예매하기를 클릭하면 티켓의 종류와 매수를 선택하는 오버레이가 나타난다. 선택해야 할 옵션이 있는 경우에는 ‘**옵션 선택하기**’ 페이지로 넘어간다. 티켓을 여러장 구매할 때 모든 티켓마다 옵션을 일일히 선택해야 한다. 티켓마다 옵션들을 다 펼치면 스크롤이 너무 길어질 것 같아 아코디언으로 접을 수 있게 했다. 모든 티켓을 똑같은 옵션으로 선택하는 경우가 많을 것 같아 한번에 옵션을 적용하는 토글 버튼도 넣어주었다. 경우마다 api 요청 형식에 맞게 객체 값 바꾸는거에서 고생 좀 했다. 눈물의 스프레드 연산자 파티. 구현 다 하고 나서야 immer 의 존재가 생각났다. 에라이.
 
-![](https://blog.kakaocdn.net/dna/vbPpi/btr2RhdIkUd/AAAAAAAAAAAAAAAAAAAAAKKXmwULJytbU7NY8O1873blDOeroJAUXQiYuivr53j5/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=pkjp3b7CwwAApX5QjpdJSg5U9pg%3D)
+![dudoong 1 1](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/dudoong-1-1.gif)
 
 **어드민**에서는 드래그 앤 드롭으로 티켓에 옵션을 적용한다. 매우 직관적인 UX. 취소할 때도 빈 곳에 드롭하면 취소됨. beautiful-dnd 라이브러리를 처음 이용해봤는데, 꽤 편하다. 처음 개발을 공부할 때는 이벤트리스너로 직접 드래그앤 드롭을 구현했었다. 그래서 그런지 라이브러리를 처음 사용할 때 이해가 한결 쉬웠던 것 같다.
 
@@ -71,7 +71,7 @@ draft: false
 
 ‘옵션 선택하기’에서 모든 옵션에 응답을 입력하고 다음 버튼을 누르면 **주문하기** 화면이 나온다. 모든 옵션의 응답이 똑같은 티켓은 하나의 주문정보(orderLine)으로 묶인다. 만약 3개의 티켓을 샀을 때 그 중 2개의 응답이 같고 1개의 응답이 다르다면, 하나의 주문(order)에 2개의 주문정보(orderLine)이 들어가는 것. 배달의 민족에서 여러개의 음식을 시켰을 때 옵션이 똑같으면 같은 주문에 수량이 추가되는 것과 비슷한 정책이다.
 
-![](https://blog.kakaocdn.net/dna/boOQtA/btr2FcFlkvi/AAAAAAAAAAAAAAAAAAAAAFwrLy7KuXfcNprktTFMx-Ub19tDMKpjJA9JDAwKbxHx/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=LnOV7FnKlGNDlQBqPWCbsFY8G0U%3D)
+![Pasted image 20251016170706](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170706.png)
 
 예매 내역에선 위와 같이 보이게 된다. 하나의 주문에 여러 주문정보(orderLine)이 있다면 좌우로 슬라이드해서 넘겨본다. 아코디언을 열어 옵션에 작성한 응답들을 다시 확인할 수 있다. 유료 옵션을 선택했다면 얼마의 가격이 붙었는지 태그를 통해 알려준다.
 
@@ -79,7 +79,7 @@ draft: false
 
 하지만 모바일 티켓은 주문정보를 모두 펼쳐 하나의 리스트로 보여준다. 위의 경우라면 2개의 주문정보이지만 3개의 티켓을 한번에 나타내는 것. QR코드를 찍고 입장하는 페이지이기 때문에, 옵션과 주문정보는 별로 중요하지 않은 정보이다. 내가 구매한 티켓이 몇장이 있고, QR코드 티켓의 상태가 무엇인지가 더 중요하다.
 
-![](https://blog.kakaocdn.net/dna/dgILUX/btr2H6dte3p/AAAAAAAAAAAAAAAAAAAAABse8a-cW4qeZbfNeXgxCrFJju8jQfFDjaBD3uDENa5r/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=0dpLP4VkjMBi23eTdLYsTcRWtU4%3D)
+![Pasted image 20251016170711](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170711.png)
 
 이전 버전과 크게 다른 점은 없다. 그만큼 검증된 UI라는 뜻!
 
@@ -95,7 +95,7 @@ draft: false
 
 어드민에서 주요 페이지 몇개를 캡쳐해왔다. 누구나 호스트를 생성할 수 있고, 어느 호스트나 공연을 등록할 수 있다. 개발은 둘째치고 정책들을 다지느라 기획 쪽에서부터 고생했던 것 같다.
 
-![](https://blog.kakaocdn.net/dna/RFLI1/btr2O1hX0z7/AAAAAAAAAAAAAAAAAAAAAPV73laheXYffI4XLms9ig0w1Rr6JkcFMGjpZOQS6qP4/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=BO2rspxGME%2FspFq9nHyrUIfCwgc%3D)
+![Pasted image 20251016170717](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170717.png)
 
 ![](https://blog.kakaocdn.net/dna/BxxZH/btr2PSSAEq2/AAAAAAAAAAAAAAAAAAAAANsSJbKDmHTogI9weG0_g7_sUHcoCOlcj5-ObrlBEVYr/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=OXZK%2F8K4yIP3k9AktxJJ%2FxEKPL8%3D)
 

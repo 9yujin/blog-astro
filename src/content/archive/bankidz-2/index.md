@@ -4,7 +4,7 @@ description:
 date: 07/26/2022
 draft: false
 ---
-![](assets/Pasted%20image%2020250928235440.png)
+![Pasted image 20250928235440](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020250928235440.png)
 
 다른 팀에 비해 볼륨은 배로 큰 상황이었지만 제일 천천히 진도를 나갔다. 할 수 있는 고민은 다 하고 시작하지만, 그래도 개발을 하다보면 어긋나는게 생긴다. 이번 글은 뱅키즈 프로젝트의 초기 세팅에 대한 기록. 팀 프로젝트 직전에 마지막으로 했던 팀 협동 스터디에서 사용했던 코드와, 이전에 고티켓 플젝에서 사용했던 스택들이 많은 도움이 되었다. 여기서 세팅하면서 배운 것들은 이제 막 시작한 두번째 고티켓 프로젝트에서 또 요긴히 사용할 예정.
 
@@ -160,9 +160,8 @@ deploy 레포지토리에 액션이 트리거되면 도커 컴포즈를 이용�
 
 자세한 기록은 위의 기록으로.
 
-![](https://blog.kakaocdn.net/dna/bAFRAF/btrIekuHNVq/AAAAAAAAAAAAAAAAAAAAAKYxoy5zb2Amd-KUa-f2-vuKRJ1Fl5XNq28VQtqYna90/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=R4dEtFQQmVhQ6ydHZ6LYMF%2BJaew%3D)
+![Pasted image 20251016164104](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016164104.png "장장 10트만에 성공")
 
-장장 10트만에 성공
 
 ### 4. 절대 경로 설정
 

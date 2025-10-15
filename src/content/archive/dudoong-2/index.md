@@ -176,7 +176,7 @@ export interface InfiniteResponse<T> {
 
 ### Overlay 컴포넌트
 
-![](https://blog.kakaocdn.net/dna/4dIM1/btr6N52MeZY/AAAAAAAAAAAAAAAAAAAAAODbZFU_ikeNbGydasAvE3HqijReM_1UFEKQhgMGsgc4/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=aaf%2BnIKTASEp77ofrIzB6OuUgkI%3D)
+![Pasted image 20251016170814](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170814.png)
 
 모달창 역시 고스락 티켓에서부터 계속 써오던 UI였다. 두둥을 개발하면서 모바일일 땐 화면 아래에서 올라오는게 더 자연스럽다고 생각해서 바텀시트로, PC에선 모달로 오버레이를 띄우도록 했다.
 
@@ -190,7 +190,7 @@ const { isOpen, openOverlay, closeOverlay } = useOverlay();
 
 ### Popup 컴포넌트
 
-![](https://blog.kakaocdn.net/dna/cmyRIi/btr6NXjpsLc/AAAAAAAAAAAAAAAAAAAAAJWDMftKcGbXAxCJ5sKjJrM-dJNTebhplVV2ufWeG6oc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=f184Pf9S8z2DAbmmaSFfVCVDvow%3D)
+![Pasted image 20251016170818](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170818.png)
 
 어드민페이지에서 테이블 메뉴를 클릭했을 때 뜨는 팝업 메뉴 컴포넌트이다. 이 외에도 헤더의 프로필을 클릭했을 때, 검색 옵션을 변경할 때 팝업 컴포넌트를 사용한다.
 

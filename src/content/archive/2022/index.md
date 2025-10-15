@@ -4,24 +4,23 @@ description:
 date: 12/27/2022
 draft: false
 ---
-![](https://blog.kakaocdn.net/dna/nqgkr/btrUxplDXZV/AAAAAAAAAAAAAAAAAAAAAMMblLWa__uOGk-0cgbhSPFkOreR2oBddx0FLcHllF06/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=OkSjoromcIMnGiX5Wnfu1ZTssPI%3D)
+![Pasted image 20251016162630](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016162844.png)
 
 #### 1. 글을 위한 글
 
-![](https://blog.kakaocdn.net/dna/DFT6C/btrTMRPUnY1/AAAAAAAAAAAAAAAAAAAAADrIUJudhkvjE_Bfm3P8ZIWo_clD4njnzOoRqbFeksIY/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=lW50V0dnR6fCEgARWN3W5NeHNFM%3D)
-
+![Pasted image 20251016163607](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016163607.png "http://news.kyobobook.co.kr/people/writerView.ink?sntn_id=11083")
 
 이 블로그에 이런저런 잡다한 글을 올리는 카테고리 이름을 바꿨다. 글을 위한 글. 이석원의 블로그 제목과 똑같은 이름이다. 나도 개발자로서의 기술 블로그가 아니라 그냥 글을 쓰는 사람으로서 글을 쓰고 싶다는 욕심으로 가져왔다. 네이버 일상블로그도 그렇고 티스토리도 그렇고, 처음 의도대로 관리되고 있지는 않아서 아쉬운 무언가가 있다. 그 무언가가 뭔지는 아직 모르겠음. 주변의 글을 잘 쓰는 친구들의 영향을 많이 받는다. 문창과 교양과제 출품작이라고 올렸던 단편 소설이 엄청 충격이었다. 저게 공대생 머리에서 나올 수 있는 글인가? 그때부터 나도 글을 조금씩 성의있게 쓰기 시작했던것 같음. 잘 쓰기 이전에 성의있게 쓰기!
 
 내가 자주 읽고 좋아하는 (모르는 사람들의) 블로그들을 레퍼런스 삼아 시작했었다. 근데 애초에 그 사람이랑 나랑 사는 방식이 다르니까. 아무튼. 이 블로그의 방향에 대해선 계속 고민을 해봐야겠다. 기술 블로그를 왜 하는지, 하는게 정말 나에게 도움이 되는 일인지 고민을 종종 한다. 저번 GDSC 세미나에서 초청 연사분이 "개발자라면 글을 쓰세요" 라며 덧붙인 이야기가, 블로그나 리드미를 열심히 쓰면 **내 능력을 100% 인정받을 수 있다**는 것. 나름 맞는 말 같다.
 
-![](https://blog.kakaocdn.net/dna/CGuZG/btrTPWjlZSi/AAAAAAAAAAAAAAAAAAAAAFlOjPnmGO8niJi-6FpU9szeX_LvbctsNhFBZpeDdD-w/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=YwBEUeTEHd9ORzOIZ6Od%2FnoiHj4%3D)
+![Pasted image 20251016163613](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016163613.png "https://imksh.com/108 (넥스터즈 지원자 서류 검토 후기)")
 
-[넥스터즈 지원자 서류 검토 후기](https://imksh.com/108) "이렇게 쓸거 아니면 기술블로그 하나마나다" 라는 생각으로 쓰신 글 같음. 혹시 내 블로그도 찬찬히 보시고 긍정적으로 생각하셨을랑가. 많이 공감하는 내용이었기 때문에, 글 하나하나 정성스레 쓰려고 노력한다. 실제로 덕분에 작업을 할 때 내가 쓴 글이 도움이 될 때가 많다. nginx 세팅할때나 CICD 세팅할때 남의 블로그 말고 내글을 보는게 훨신 편하다. 엄청 잘 써놨거든 히히.
+"이렇게 쓸거 아니면 기술블로그 하나마나다" 라는 생각으로 쓰신 글 같음. 혹시 내 블로그도 찬찬히 보시고 긍정적으로 생각하셨을랑가. 많이 공감하는 내용이었기 때문에, 글 하나하나 정성스레 쓰려고 노력한다. 실제로 덕분에 작업을 할 때 내가 쓴 글이 도움이 될 때가 많다. nginx 세팅할때나 CICD 세팅할때 남의 블로그 말고 내글을 보는게 훨신 편하다. 엄청 잘 써놨거든 히히.
 
 ### 2. 일 벌이는 사람들 특
 
-![](https://blog.kakaocdn.net/dna/mJpAe/btrTMdMmaji/AAAAAAAAAAAAAAAAAAAAAPXxSYRy-orzR2PGbWsyLzMqIBlO5qBJALjObzOvZfuT/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=4TmhIofMPsAwak5RjdrOptavnNg%3D)
+![Pasted image 20251016162630](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016162630.png)
 
 늘리는 건 쉬운데 다시 줄이는 건 어렵더라. 이병건더기의 말씀.
 
@@ -33,15 +32,13 @@ draft: false
 
 복학을 했다. 새내기때부터 3학년이 진짜 힘들다고 계속 들어왔고, 역시 말 그대로였다. 운인지 실력인지 **수강신청은 매번 실패**해서 소위 '헬'교수님들만 골라들었다. 여러분들은 꼭 민첩한 하루 되세요.
 
-![](https://blog.kakaocdn.net/dna/dfzNnQ/btrTSwKsRky/AAAAAAAAAAAAAAAAAAAAAM8mBZrFVYYxnFd70T6DNrxe8NICy3Tq5fkXIHP9iGN0/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=lEWcdySJ6XlxsulTR528trgO94o%3D)
-
-알겠다구
+![Pasted image 20251016163035](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016163035.png)
 
 친구들과 함께 정신차리고 으쌰으쌰했던 1학기였던 것 같다. 절반정도는 비대면으로, 그 이후론 쭉 대면이었다. 코로나의 수혜를 정말 하나도 받지 못한 20군번이라 조금 아쉽다. 그나마 한 학기는 학점완화를 받았다. 덕분에 한번도 받아보지 못했던 학점을 받았고 좋은 동기부여가 됐다. 애석하게도 2학기 학점은 기대가 되지 않는군요.
 
 어셈블리 언어에서 배웠던 내용이 컴퓨터구조에서 쓰이고, 컴구에서 배운 내용이 운영체제와 디비에서 쓰이고.. 자료구조는 어디에나 쓰이고.. 이런 것들이 꽤 재밌었다. 대학교 다니면서 처음으로 우와우와 하면서 공부했던 것 같다. 시험 때문에 한 벼락치기가 아니었다면 훨신 재밌게 공부하지 않았을까. 재미를 떠나서 매번 시험기간마다 받는 스트레스가 지겹다 이젠. 얼른 졸업하고 싶다.
 
-![](https://blog.kakaocdn.net/dna/c8a0fg/btrTPAs4ZYH/AAAAAAAAAAAAAAAAAAAAACsFyOa_S_PIN38ovZTPIYR43QKP0zDqYlABRWliLXHy/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=BAZKEwrMfVtQ0ua7xOPVoWo4LaY%3D)
+![Pasted image 20251016162650](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016162650.png)
 
 4월에 3주, 6월에 3주 정도 잔디가 비어있다. 아마 시험기간이었을 거다. 열심히 달려온 한 학기에 대한 훈장 어쩌고.. 하는 마음으로 기분좋게 보고있다. 방학도 했으니 다시 매일같이 진한 잔디로 채우지 않을까 싶다.
 
@@ -79,7 +76,7 @@ draft: false
 
 무시무시한 경쟁률이었다. 지원서 작성하는데도 다른데보다 훨신 공을 들였다. 플젝만 하고 끝나는 타동아리에 반해서 그 이후에도 공모전∙ 스터디 등이 자율적으로 진행되는 커뮤니티였기 때문에, 인프라와 네트워킹에 관한 관심에 대한 이야기를 강조해서 작성했다. 그 이유인지 면접때도 기술보다는 협업과 커뮤니케이션 위주로 질문을 받았다. 자세한 이야기는 따로 포스팅할 예정.
 
-![](https://blog.kakaocdn.net/dna/TgUZa/btrTQf40cak/AAAAAAAAAAAAAAAAAAAAAKRhJbw2Aj3zg7KrOK3vshA5qVpVmVK428L8autNcb4M/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=ePw%2BPd2y86bGrm4EN348NlbdwM0%3D)
+![Pasted image 20251016162700](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016162700.png)
 
 정말 운이 좋았다. 역시 문닫고 들어가는게 제일 기분 좋음. 넥스터즈는 작년에 개발 동아리들이 어떤게 있는지 둘러보면서 처음 이름을 들었다. 직장인들도 많이 참여하기 때문에 붙기 많이 어렵고 수준이 높다는 글을 많이 봤다. 그래서 마냥 멀게만 느껴졌다. 개발을 시작하고 1년만에 넥스터즈에서 활동하게 되었다는게 꽤 뿌듯하고, 그만큼 기대된다!!
 
@@ -97,9 +94,8 @@ draft: false
 
 고스락에 들어와서 벌써 33곡째. 올해는 9곡을 했다!! 9월 공연에는 팀 두개를 같이 뛰었다. 고생 많이했지만 너무너무 뿌듯했음. 처음 밴드를 하면서 하고 싶었던 곡이 가을목이랑 안티프리즈였는데, 두 곡을 한 공연에 할 수 있었다니. 아 너무 좋다.. 얼어붙은 아스팔트 도시 위로! 이번 방학 기간에도 공연을 준비하기로 했다. 엄청 잘하시는 선배님들이랑 같은 팀을 하게 돼서 상당히 기대된다. 두근두근. 내년 3월도 뿌셔보겠습니다.
 
-![](https://blog.kakaocdn.net/dna/HL41D/btrUHOc7Hdm/AAAAAAAAAAAAAAAAAAAAAK4qdQI1CMmoGdK6qby4GbtJcI6oeypauBphXdM9OMDE/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=5Nt0Eqcz2xBOM7RRies%2F722Wfzw%3D)
+![Pasted image 20251016162935](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016162935.png)
 
-락스타 사이에 당당히 자리한 한규진
 
 ### 마지막. 2023 하고싶은 것
 
@@ -107,11 +103,11 @@ draft: false
 
 솔직히 말하면, 제대로 안해왔다. 4학년 때는 정말 일 벌리지 말고 PS 꾸준히 하기. 코테를 포기하면 쓸 수 있는 공고 수가 확 줄어든단다. 개발보다 진짜진짜 재미없지만 열심히 해야겠다. 어른이니까...
 
-#### **고스락 프로젝트**
+#### 고스락 프로젝트
 
 어쩌다보니까 볼륨이 어마어마하게 커졌다. 서비스의 모든 디자인을 항상 내가 도맡아서 했었다. 이번 방학에는 고스락을 벗어나 제대로 된 서비스로 확장하기 위한 프로젝트를 기획하고 있다. 혼자서 감당하기에 당연히 버거운 부분이 있었다. 서비스의 브랜딩과 랜딩페이지 등을 도와줄 디자이너를 한분 섭외했다!! 이전 작업물들을 보니 딱 지금 우리에게 부족한 부분을 채워주실 수 있는 분으로 잘 모셔온 것 같다. 이번 방학 정말정말 바쁘겠지만, 길게 보고 하는 프로젝트이니 제대로 시작해서 제대로 끝내보고 싶다.
 
-#### **졸업 프로젝트**
+#### 졸업 프로젝트
 
 졸업 전에 마지막으로 할 수 있는 프로젝트일 것 같다. 더군다나 한 프로젝트에 반년 이상 시간을 쏟을 수 있는 기회도 이번이 마지막일 것 같음. 좋은 팀원들로 모였으니 재밌는 기획, 재밌는 개발 해봐야겠다.
 

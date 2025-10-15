@@ -4,7 +4,7 @@ description:
 date: 07/27/2022
 draft: false
 ---
-![](assets/Pasted%20image%2020250928235447.png)
+![Pasted image 20250928235440](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020250928235440.png)
 
 디자이너가 프로젝트에 함께 한다는건 축복이다. 디자인이나 기획에 시간을 쏟지 않고 개발에만 집중할 수 있다는 것 외에도 얻어가는 것이 꽤 있다. 디자인 팀에서 넘겨 받은 피그마 화면을 차근차근 뜯어보면서 많이 배웠다. 디자이너들은 어떤 방식으로 작업하는지, 피그마의 이 기능은 어떻게 활용하는지, 협업은 어떻게 하는지.  
   
@@ -14,18 +14,16 @@ draft: false
 
 ### 1. ThemeProvider
 
-![](https://blog.kakaocdn.net/dna/bBcXcd/btrIfRMPX0x/AAAAAAAAAAAAAAAAAAAAAHNM2zTfwAcJJiJSGrjoYIQvtBMD6X46tYKeg-mXSTAN/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=6qP1o0Ip00HhI2ry%2B1ZylYHqPvQ%3D)
+![Pasted image 20251016164230](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016164230.png)
 
-![](https://blog.kakaocdn.net/dna/cMGC7i/btrH49VUgFF/AAAAAAAAAAAAAAAAAAAAAMpbrWvL1yZ8H_JetL_A81dpMJ6-xcqBqp0C1VUkO3VM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=Vzr%2B0DDkw3GQcPBLhxZYaIe6u7s%3D)
+![Pasted image 20251016164235](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016164235.png)
 
 디자이너 선생님들이 넘겨준 색 팔레트와 타이포이다. 디자인에 사용된 모든 색상들은 피그마 내에서 지정된 이름으로 볼 수 있다. 타이포도 동일. 디자이너가 폰트, 굵기, 크기가 똑같은 스타일이어도 쓰이는 용도에 따라 따로 분리를 해주어서 좀 더 편하게 사용할 수 있었다.  
-  
 
-![](https://blog.kakaocdn.net/dna/nrSAD/btrIkpbYPcP/AAAAAAAAAAAAAAAAAAAAABdeHGITBfvPsjXj9arnuVRGQ3CFUROdo8m7-yQcjAWP/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=HWLepPD9lcCfsAAWcenbub7mauc%3D)
-
+![Pasted image 20251016164240](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016164240.png)
 context를 기본으로 하는 themeProvider를 통해 전역으로 theme을 불러와서 사용할 수 있다. 미리 세팅한 색들이 자동완성으로 바로 뜬다.
 
-![](https://blog.kakaocdn.net/dna/bIkNIf/btrImccau6f/AAAAAAAAAAAAAAAAAAAAAEQe70ArBLbBePoU2p1fn7KVum_31Dt2EoyOGhXQnWgM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=l0O8TskDISxEsi2P3cjWsAX96kc%3D)
+![Pasted image 20251016164244](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016164244.png)
 
 타이포의 경우도 마찬가지. 글꼴, 굵기, 크기, 줄 높이를 설정해두었다. 자동완성을 통해 손쉽게 한번에 네가지 속성을 불러올 수 있다.
 
@@ -126,13 +124,13 @@ export const theme: DefaultTheme = {
 
 디자인시스템에는 타이포와 팔레트 뿐만 아니라 그리드시스템, 버튼, 탭바, 인풋 박스 등의 공통으로 쓰이는 컴포넌트들도 정의가 되어있다. 이전에 사용해본 경험이 있던 스토리북을 이번 프로젝트에도 도입하기로 했다. 가이드가 잘 되어 있으니 더욱 효율적으로 사용할 수 있을 것이라 기대했다.
 
-![](https://blog.kakaocdn.net/dna/cYf0Oo/btrIjLsQHtq/AAAAAAAAAAAAAAAAAAAAAGAWnJSsfRZqUO23vXW1DQtuBUSbkKxssLaSHxkuCE0h/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=RxIHdDMaTl9%2FmR%2BZdfCp9clwORo%3D)
+![Pasted image 20251016164256](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016164256.png)
 
 피그마에서 하나의 컴포넌트에 properties를 다양하게 줄 수 가 있다. 디자이너가 작업하는 방식 그대로 리액트스럽게 코드에 반영할 수 있다. props를 다르게 넣어주면서 하나의 컴포넌트의 다양한 variants를 테스트할 수 있게 되었다. 
 
-![](https://blog.kakaocdn.net/dna/n8VgR/btrImP9qthD/AAAAAAAAAAAAAAAAAAAAAPODyydDwrL1eUJ2ylXwalNU0Tymmj4-S_g3523RXJu3/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=FcJD4oZNywH2yVUuuZmrINIfvso%3D)
+![Pasted image 20251016164300](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016164300.png "버튼 컴포넌트 스토리북 페이지")
 
-버튼 컴포넌트 스토리북 페이지
+
 
 [**[React] Storybook 설정 및 Github Actions 배포 자동화**](https://9yujin.tistory.com/46?category=1013884)
 

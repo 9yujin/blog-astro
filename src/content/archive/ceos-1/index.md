@@ -25,11 +25,11 @@ CEOS는 신촌 유일 IT창업 동아리로, 신촌 소재의 네개 대학교�
 
 총 8문항 정도 된다. 하루이틀 고민하면 충분히 쓸 수 있을 정도로 부담스럽지 않은 양이다. 세오스 이후에도 많은 지원서들을 쓰면서 얻은 나름의 꿀팁이 있는데, 지원서를 쓰기 전에 말 그대로 왜 지원하려는지 '지원 동기'를 꽤 오래 고민해본다. 이 활동을 통해서 무엇을 얻어가고 싶고, 나는 동아리에 어떤걸 기여할 수 있을까. 그 두가지가 머릿속에서 정리되면 글은 쉽게 써진다.
 
-![](https://blog.kakaocdn.net/dna/pOWkq/btrUAa2T5DQ/AAAAAAAAAAAAAAAAAAAAADvrCEoJxa7kGmIReIpy3aePgcWt1z0_Ql1NuyGqGt6E/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=pp1EStS1OczwVUhMOLWf6iu6pt4%3D)
+![Pasted image 20251016170205](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170205.png)
 
 이렇게 서류합격 문자가 날라온다. 이러한 개발 동아리 지원이 아예 처음이었기 때문에 경쟁률이 어느정도이고 내가 어느정도 수준인지 전혀 가늠이 가지 않았다. 불안한 와중에 다행히 서류 합격했다는 문자를 받았다.
 
-![](https://blog.kakaocdn.net/dna/J6Bwg/btrULNEBSMX/AAAAAAAAAAAAAAAAAAAAAOLV4MAN8XGnPyI6w78i4qcPp5aG6Z2FDm7hFg5bNStW/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=520zLcfIV3Twbmu8BwL77z%2FIcMY%3D)
+![Pasted image 20251016170211](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170211.png)
 
 공연을 앞두고 합주하느라 문자 답장을 잊고 있었다. 합주 중에 문자받고 헐레벌떡 답장한 모습..
 
@@ -49,13 +49,13 @@ CEOS는 신촌 유일 IT창업 동아리로, 신촌 소재의 네개 대학교�
 
 **새로운 기술들을 써보고싶다고했는데, 만약 같이 협업하는 프론트 멤버가 역량이 안되거나 해서 싫다고 하면 어떻게 할건지.** 지원서에 작성한 문장(Nextjs와 타입스크립트 같은 것들을 사용해보고 싶다)을 보시고 하신 질문이다. 이 역시 답이 정해져있는 질문 같아서 고민을 좀 했지만 마땅히 생각나는게 없어서 솔직하게 말씀드렸던 것 같다. '아쉽기는 하겠지만 두달 조금 안되는 기간동안 프로젝트를 완성하는게 중요하므로 팀원과 이야기를 많이 해보고 적절한 기술을 선택하겠다 라고 답변했다.
 
-![](https://blog.kakaocdn.net/dna/szOXO/btrUGrpZxIQ/AAAAAAAAAAAAAAAAAAAAAKsrOvYLZsIxvFU7sb347vBmuC-aPLP4aCAWOnW1Ay5y/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=06SW%2FvVulzrmPaqp%2BV0AP17hZfM%3D)
+![Pasted image 20251016170216](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170216.png)
 
 그렇게 합격 문자를 받았다. 사실 첫 합격 공지는 웹사이트를 통해 공지된다. 아쉽지만 그 스크린샷이 날아갔다. 맥북이나 아이폰이나 용량때문에 스크린샷들을 최근에 싹 삭제했거든. 어쨌든 기분이 좋았답니다.
 
-![](https://blog.kakaocdn.net/dna/H1RCU/btrVmWOqkwg/AAAAAAAAAAAAAAAAAAAAAFWsh_CGchFZhLEknqfz6amCJbWA8oHslYba5oD8jM4i/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=FaXZOP0lwR5k%2Fw7rcR%2Fsm7ln1sE%3D)
+![Pasted image 20251016170219](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170219.png "운영진 친구가 갖고있었다!!")
 
-운영진 친구가 갖고있었다!!
+
 
 #### + 다시 지원한다면?
 
@@ -73,17 +73,16 @@ CEOS는 신촌 유일 IT창업 동아리로, 신촌 소재의 네개 대학교�
 
 ---
 
-![](https://blog.kakaocdn.net/dna/d8aAsR/btrUIZfpDO2/AAAAAAAAAAAAAAAAAAAAAFZWCIyo-KVPp19s5LQ8LefXHlYSLFEfkCcIU69uKbKO/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=EEibVvMzUy9N6Ms5IwAzzlW3ssQ%3D)
+![Pasted image 20251016170224](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170224.png)
 
 매주 과제가 올라오고, 그 과제를 풀리퀘로 제출하면 서로에게 코드리뷰를 달아주는 형식이다. 정말 좋은 기회라고 느꼈다. 혼자 공부하면서 정말 아쉬웠던 부분을 잘 채우고 있다.
 
-![](https://blog.kakaocdn.net/dna/bcgj5l/btrUIm22S2b/AAAAAAAAAAAAAAAAAAAAAFSsi_QRJbzSf9w96zdZPTtCCVvpqdhwNIFX_QYx-ulV/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=79LGSmGJq9fm1IAuR2v5XdQPR4A%3D)
+![Pasted image 20251016170229](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170229.png)
 
 정말 대단하다고 느낀다. 매주 열명 정도 되는 팀원들의 코드를 다 읽고 리뷰를 달아준다. 이런 열쩡과 능력... 모조리 배워가야겠다!!
 
-![](https://blog.kakaocdn.net/dna/kSDYG/btrUNURuiFQ/AAAAAAAAAAAAAAAAAAAAAEONN2mHFT4WYbo49hrLcADlsg3LXvZxzPAH8F_Ajgsw/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=fYzwJ8Si866Zmb3bv17jA%2FOR3dM%3D)
+![Pasted image 20251016170233](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170233.png)
 
-내가 여기서 제일 새싹인거 같지만!!
 
 나도 다른 사람의 코드를 보면서 많은것을 배워가는데, 누군가가 나를 보고 배운다고 생각하면 정말 뿌듯하다. 열심히 해야겠다.
 
@@ -99,11 +98,11 @@ CEOS는 신촌 유일 IT창업 동아리로, 신촌 소재의 네개 대학교�
 
 중간고사 이후에는 팀빌딩이 완료된다. 매주 수요일 세션 때 팀별 진행상황을 공유한다. 기획과 디자인 파트에서는 각자 팀의 기획과 디자인을 매주 디벨롭해 발표한다. 기획 발표에서 IA와 플로우차트,와이어프레임이 만들어지는 과정을 볼 수 있다. 디자인 발표에서는 서비스의 와이어프레임에서 시작해 mid-fi, hi-fi로 디자인이 완성되어가는 과정을 볼 수 있다.
 
-![](https://blog.kakaocdn.net/dna/QVBjX/btrUKW3RtsG/AAAAAAAAAAAAAAAAAAAAAJc-sftpYYh3mw2OIl2ADyDXMDd6rJRecKjPdqJJ_Ppz/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=HFplfa84WRXHF2QumjDOSeWmwK8%3D)
+![Pasted image 20251016170238](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170238.png)
 
-![](https://blog.kakaocdn.net/dna/bNHAsx/btrUORfVNGN/AAAAAAAAAAAAAAAAAAAAAJKJj8HjadXICnORY-f3ipFUFYeVd84pe5jv9xOWew6A/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=bzSJIlDMQIEQUvMbmrulitWn9sA%3D)
+![Pasted image 20251016170244](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170244.png "뱅키즈 초기 와이어프레임과 IA")
 
-뱅키즈 초기 와이어프레임과 IA
+
 
 **CEOS가 아니었다면 쉽게 경험하지 못했을 것들**이다. 다섯 팀의 발표를 들으면서 얻어간 것이 꽤 많다. 서비스 기획을 할때는 어떠한 프로세스로 진행되는게 좋은지, UI와 디자인시스템 구축은 어떤식으로 하는지 등등. 고스락 프로젝트 내부에서 자체적으로 기획과 디자인을 하는데 아주 많은 도움이 되었다. 거의 동일한 프로세스로 진행되고 있다.
 
@@ -113,9 +112,9 @@ CEOS는 신촌 유일 IT창업 동아리로, 신촌 소재의 네개 대학교�
 
 사실 CEOS의 진짜 장점은 여기에 있다. 모두가 신촌권 대학생이라는 것. 특히 같이 개발공부할 수 있는 친구를 얻을 수 있다는게 좋았다. 생각보다 학교 내에 개발에 열정을 가지고 같이 공부할 수 있는 사람을 찾기가 힘들다. ~~그런게 아쉬운 분들을 위한 GDSC 홍익 많관부.~~ 서로 동기부여 받으면서 정보를 나눌 수 있는 친구들을 원하는 사람들에게 정말 추천해주고 싶다.
 
-![](https://blog.kakaocdn.net/dna/JmVoB/btrUNqb42IF/AAAAAAAAAAAAAAAAAAAAAPTYA0O3ZQvlqxnB9_sCXkSdWKkmCKr4SboFy9emODPj/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=YNBcQViWwuqBtFOcuLMyDdtnz5c%3D)
+![Pasted image 20251016170249](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170249.png)
 
-![](https://blog.kakaocdn.net/dna/bpSFMK/btrUN2IMqZk/AAAAAAAAAAAAAAAAAAAAAHuSGpSWFhvbEVqxQoum7fWVtXXX5bGrhKZdqApBiwRf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=LvuzGAT9u8ZKB93yRe2hYHNP6SI%3D)
+![Pasted image 20251016170254](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170254.png)
 
 안 궁금하던거도 궁금하게 만들어주는 대화를 할 수 있다. 쟤 때문에 갑자기 궁금해져서 리액트에서 훅의 작동원리에 대해서 공부를 좀 했다. 조만간 정리해서 포스팅해야겠다.
 

@@ -8,7 +8,7 @@ draft: false
 
 한달에 삼만얼마 짜리 요금제를 쓰고 있다. 처음에 제공된 데이터 몇기가를 전부 소진하면 그 이후론 속도제한이 걸린 채 무제한으로 사용할 수 있다. 말이 무제한이지, 웹서핑과 음악 스트리밍을 동시에 못하는 대역폭. 그럴 때 휴대폰으로 두둥을 들어가면 로딩이 굉장히 느려 답답했다. 포스터 이미지를 많이 불러오는 홈화면은 특히 그랬다. 웹 성능 최적화를 해보기로 했다. 그리고 이번 글은 그에 대한 기록.
 
-![](https://blog.kakaocdn.net/dna/L3tY8/btsm5sf3JLe/AAAAAAAAAAAAAAAAAAAAAHx5hJlezkFj9JeO7m0xaEUQqryOohzRb4cN8kdCywAI/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=JP7kVeZ1S5oWNBoxr5KxzRJnulM%3D)
+![Pasted image 20251016170846](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170846.png)
 
 초기 lightHouse 점수이다. 다행히 막 크게 안좋은 점수는 아니었다.
 
@@ -22,7 +22,7 @@ draft: false
 - 대체 글꼴이 새 글꼴로 바뀜 (FOUT - 스타일이 지정되지 않은 텍스트 플래시).
 - "보이지 않는" 텍스트는 새 글꼴이 렌더링될 때까지 표시됨 (FOIT - 보이지 않는 텍스트 플래시).
 
-![](https://blog.kakaocdn.net/dna/Q1RTr/btsm8YFDej5/AAAAAAAAAAAAAAAAAAAAAG_uL3udkinMGLyR22hMeKnYG7Sd9tMW8lPKQYAt1xGN/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=4pEWIyCahcBU4rv339qlynm3dp0%3D)
+![Pasted image 20251016170849](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170849.png)
 
 현재는 폰트가 불러와지기 전까지는 아무런 텍스트도 나타나지 않고 있다가 폰트가 로드된 후에 텍스트가 뙇 나타난다. 크롬 브라우저는 기본적으로 FOIT방식을 사용하고 있다 (사파리에서는 궁서체로 보이다가 바뀌더라 - FOUT 방식) .
 
@@ -53,7 +53,7 @@ FOUT를 방지 하기 위해 즉시 필요한 웹폰트를 미리 로드할 수 
 `preload`를 통해 리소스를 요청할때에 우선순위를 당겨 미리 로드할 수 있도록 한다. 실제로 적용한 후에 새로 빌드해 확인해보니 글꼴이 깜빡이는 현상이 사라진것을 확인해볼 수 있었다.
 
 
-![](https://blog.kakaocdn.net/dna/X6uLz/btsm8hevXgN/AAAAAAAAAAAAAAAAAAAAAGj0JzR3x2VVl6neBnALNJW4pk9vSJRkLiW5GhPLrbBk/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=W%2BQW3r%2FaH1kNFZ53CMheOFfN7BY%3D)
+![Pasted image 20251016170856](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170856.png)
 
 
 하지만 Safari (또는 모바일 브라우저)에서는 적용이 되지 않았다. 죄다 기본 글꼴로 깨져서 나타났다. 스택오버플로우에도 비슷한 질문들이 많았음.
@@ -72,7 +72,7 @@ FOUT를 방지 하기 위해 즉시 필요한 웹폰트를 미리 로드할 수 
 
 두둥 웹의 Origin과 현재 사용하고 있는 웹폰트 CDN의 Origin이 달라서 cross-origin 문제가 생긴다고 생각했다. `@font-face` css파일을 두둥 인프라에서 사용하고 있는 CDN에 띄워서 직접 제공해보려고 했다. 그래도 결과는 똑같았다.
 
-![](https://blog.kakaocdn.net/dna/qpE2l/btsmWlo6bov/AAAAAAAAAAAAAAAAAAAAACCYlVH0NQMb4RhyXZrtnvfBCDK7S29SZQNmY5zWxRXz/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=MpRqtBDqrNkaaWYOGTFbDyfUUYM%3D)
+![Pasted image 20251016170905](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170905.png)
 
 글꼴을 요청할때는 CORS요청으로 전송된다. 그래서 도메인이 다를땐 요청이 되지 않던것이었는데, 서브 도메인도 똑같이 cross-origin으로 분류되기 때문이었다. CDN 설정에서 Allow-Origin을 모두 열어주었음에도 불구하고 제대로 요청이 되지 않았다. [이 글](https://blog.banksalad.com/tech/font-preload-on-safari/)을 보면 모종의 이유로 safari에서 cdn에 대한 preload 요청이 안되는것으로 보였다.
 
@@ -85,7 +85,7 @@ FOUT를 방지 하기 위해 즉시 필요한 웹폰트를 미리 로드할 수 
 
 1번과 2번같은 경우엔 이미 적용이 되어 있었고, 3번을 통해 웹폰트 리소스의 용량을 줄여보았다.
 
-![https://www.44bits.io/ko/post/optimization_webfont_with_pyftsubnet](https://blog.kakaocdn.net/dna/DeOoQ/btsninFcp4k/AAAAAAAAAAAAAAAAAAAAANYCZ_StC2ioSd45vB_t-aOH0fSljdVCOisnYax4Rzxf/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=uaoXeun8NKI8%2BYmdUM8%2FWJjDPE4%3D)
+![Pasted image 20251016170908](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170908.png)
 
 
 **서브셋 폰트**는 폰트 파일에서 불필요한 글자를 제거하고 사용할 글자만 남겨둔 폰트다. 보통은 '뷁'과 같은 글자는 쓰지 않으니까. 26개의 알파벳과 달리 한글 조합은 만개 언저리나 되는데, 서브셋 폰트로 만들어 사용하면 2300개 정도의 글자만 남겨둘 수 있다. 덕분에 용량이 훨신 작아진다. 서브셋 폰트 메이커라는 도구를 통해 변환할 수 있다. 근데 웹에서 쓰이는 웬만한 폰트는 이미 있는듯.
@@ -116,7 +116,7 @@ FOUT를 방지 하기 위해 즉시 필요한 웹폰트를 미리 로드할 수 
 
 실제 프리텐다드 다이나믹 서브셋 폰트 파일의 내용이다. 한글은 매우 자주 사용하는 문자들 조금과, 비교적 적게 사용되는 문자들 다수로 이루어져 있다고 한다. 그걸 구글께서 어쩌구저쩌구 해서 최적의 unicode-range로 나누었다고 한다. [https://www.googblogs.com/tag/korean/](https://www.googblogs.com/tag/korean/)
 
-![](https://blog.kakaocdn.net/dna/bHnR9B/btsnjb5yYa1/AAAAAAAAAAAAAAAAAAAAAAlfMyz8YChuqxeV2kPuAdCUCp_Zsy_AS69krm_8BLSK/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=T%2FwGTiN3fmX1Khv7nkETOGTYjd8%3D)
+![Pasted image 20251016170918](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170918.png)
 
 가벼운 프리텐다드와 0.6메가 지마켓산즈
 
@@ -128,7 +128,7 @@ FOUT를 방지 하기 위해 즉시 필요한 웹폰트를 미리 로드할 수 
 
 폰트보다 더 큰 문제는 이미지에 있었다. 두둥의 메인페이지는 호스트가 올린 포스터 이미지를 그대로 저장했다가 보여주고 있었다. 용량이 매우 많은 이미지로 업로드해놓으면 그런대로 로딩이 느려지는 상황이었음.
 
-![](https://blog.kakaocdn.net/dna/bivZMC/btsnim1Zo89/AAAAAAAAAAAAAAAAAAAAAHLlFw3gWUxPKN-RRzhOPqfNjWCjOXc4lpFB4p_PUw7q/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=2I47d75U5T3JvzMbSIzlnB4wqdw%3D)
+![Pasted image 20251016170924](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170924.png)
 
 기본적으로 이미지 최적화를 위해서 이런 것들을 한다.
 - 이미지 사이즈를 보여줄 크기 또는 뷰포트에 맞게 변환해서 제공한다.
@@ -191,20 +191,20 @@ const GlobalOverlay = dynamic(
 
 [https://www.npmjs.com/package/@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
 
-![](https://blog.kakaocdn.net/dna/91b8s/btsnpE2NtvG/AAAAAAAAAAAAAAAAAAAAAC9C8IC7BKDKTRv_d-oiMd1HTRDMCXBu_wtb460giAxB/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=nuSINWaF1Rc0isxk2vrcG%2FIhnHI%3D)
+![Pasted image 20251016170931](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170931.png)
 
 사실 크게 눈에 띄는 부분은 없다. 다만 디자이너가 랜딩페이지의 일러스트로 만들어준 이미지들을 그대로 svg로 넣었는데, 지금 생각해보니 미친 짓이었음. 어차피 랜딩페이지 리뉴얼 작업중이라 나중에 싹 바꿀 예정이기 때문에 지금 당장은 건들 생각이 없다. 페이지 맨 위 섹션 외의 아래 나오는 섹션들은 다이나믹 임포트를 통해 레이지하게 로딩되도록 수정해주었다.
 
-![](https://blog.kakaocdn.net/dna/cqXNXl/btsnwocseP3/AAAAAAAAAAAAAAAAAAAAAAczX3MgHpwXtTwV2MJmhoJ5-TSRXFdZLOukw-EtKLDl/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=XuhbXmnDYdRvoIBaSBO%2BdqAD7WQ%3D)
+![Pasted image 20251016170936](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170936.png)
 
 수정 전후 `pages/index.js` 모듈의 analyzer 결과이다. 빌드 파일에 무거운 svg들이 제거된것을 시각적으로 볼 수 있다.
 
-![](https://blog.kakaocdn.net/dna/lnyrL/btsnvZqwIjP/AAAAAAAAAAAAAAAAAAAAAKV4ByetrwuIEnOOGVqzyJYjYMJ723kd7zREYYYjDqE3/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=IUHiG2xgR5pzyw90PyTVLXI%2BG%2FU%3D)
+![Pasted image 20251016170940](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170940.png)
 
 최적화 작업 전 후로 빌드된 JS파일의 크기가 눈에 보이게 줄어들었다.
 
 ---
 
-![](https://blog.kakaocdn.net/dna/VT8Yj/btsnpEGyrc4/AAAAAAAAAAAAAAAAAAAAANW_c3rgayqiWXrxZTAuH9do0S1xwz1n_q-KWgs1o8Te/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1761922799&allow_ip=&allow_referer=&signature=4xNlais4YWwEoNLBLS4FPoJ9GzY%3D)
+![Pasted image 20251016170944](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170944.png)
 
 메인 페이지는 89점, 공연 상세페이지는 98점까지 올릴 수 있게 되었다. 아맞다 접근성.

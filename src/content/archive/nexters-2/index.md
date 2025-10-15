@@ -9,7 +9,7 @@ draft: false
 매주 토요일마다 정기 세션이 있다. 매주 위치가 정해져 있지는 않고, 대관이 되는 곳으로 정해지는 것 같음. 세운상가 세운홀, 역삼역 마루180 등 스타트업 창업과 관련된 장소를 주로 이용했다.  
  
 
-![](https://blog.kakaocdn.net/dna/8NkRi/btr2D4FWLFu/AAAAAAAAAAAAAAAAAAAAAJV2h_oJF_XtW-4-TRNm1nqGSoN3icaT1OY3RrXYGR7s/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=0ed1%2BFM9u0eoHz6fR%2BmwbQ4MQxU%3D)
+![Pasted image 20251016170059](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170059.png)
 
    
 매주 세션은 이 순서대로 진행된다. 1주차 활동이 시작하기 전에 미리 아이디어 발제와 투표를 하는 시간이 주어진다. ‘모임모임’ 이라는 서비스를 이용한다. 몇 기수 전에 넥스터즈 안에서 개발한 프로젝트를 실제로 사용하고 있는 것. 발제자가 자신의 기획을 작성해서 올린 후에 익명으로 원하는 서비스 3개의 투표를 한다. 넥스터즈 안에 다양한 파트가 있기 때문에, 내가 참가할 수 있는 (웹 프론트를 필요로 하는) 기획 위주로 투표를 했던 것 같다. 투표가 마감되면 선정된 10개의 아이디어가 발표된다.   
@@ -29,7 +29,7 @@ draft: false
 프로젝트와 팀에 대한 이야기. 현재 넥스터즈의 세션 출석체크는 운영진들이 직접 수기로 하고 있다. 세션 장소에 오면 이름표를 나눠주고 엑셀에 체크한다. 출석 시간이 지났을때 남은 이름표와 체크한 엑셀을 대조해보면서 출석체크를 하는 것. 문 앞에 운영진이 항상 상주해있어야 하고, 사람이 많이 모이면 운영진 테이블 앞에 병목현상이 자주 일어나는 문제가 있었다.  
  
 
-![](https://blog.kakaocdn.net/dna/0pndq/btr2xS0F216/AAAAAAAAAAAAAAAAAAAAAMJVnnxcR3fp_gQq6lYbD0MJyUwrX7Uy5Z5sBCYfMHJN/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=90NePsj5PRAA0IK9naHmQ0rjJ68%3D)
+![Pasted image 20251016170104](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170104.png)
 
 이 문제를 해결하기 위해 넥스터즈 출석체크 웹으로 출발한 것. 거기서 조금씩 살을 더해 전체 회원과 활동점수 관리, 세션 관리 등의 기능으로 기획이 완성되었다. 맨 앞 스크린에 띄워진 1분마다 새로 바뀌는 QR코드를 이용해 각자 출석체크를 빠르게 하면서도 어뷰징을 방지할 수 있다.  
    
@@ -56,7 +56,7 @@ draft: false
 
 ---
 
-![](https://blog.kakaocdn.net/dna/Qor2x/btr2vnUoJKL/AAAAAAAAAAAAAAAAAAAAAP3emUypcyE6DSv8WSlz5VL-Vf51FyP9101wFDgU-xNd/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=xKAI%2FTvDSkQBWcZf16tcecwH3kI%3D)
+![Pasted image 20251016170112](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016170112.png)
 
    
 글을 마무리하며. 항상 새로운 사람들을 만나는 자리는 긴장으로 시작한다. 그래도 매번 좋은 사람들이어서 감사. 개발을 하면서 자존감이 종종 내려가려고 할때가 많은데, 그 때마다 간신히 붙잡아주는 한두마디가 툭툭 들려온다. 여기든 저기든. 개발을 하는것도 일을 하는것도 언제나 코드보다 사람이 먼저라는 생각을 하면서!!   

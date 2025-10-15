@@ -203,6 +203,39 @@ article :where(blockquote) {
   font-weight: normal;
   border-inline-start-width: 0rem;
   background-color: #e5e7eb;
+  .dark & {
+    background-color: rgb(65, 65, 67);
+  }
+
   padding: 0.5rem 1rem;
   border-radius: 12px;
+}
+
+article :where(h4) {
+  margin-top: 2.2rem;
+}
+
+article :where(h3) {
+  margin-top: 2.4rem;
+}
+
+article
+  :where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *, pre code)
+  ) {
+  &:before {
+    content: "";
+  }
+  &:after {
+    content: "";
+  }
+  padding: 0rem 0.2rem;
+  margin: 0rem 0.1rem;
+  border-radius: 0.2rem;
+  background-color: rgb(234, 234, 235);
+  .dark & {
+    background-color: rgb(65, 65, 67);
+  }
+
+  @apply text-black/50 dark:text-white/75;
 }
