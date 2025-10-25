@@ -4,6 +4,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE } from "@consts";
 
+
 type Props = {
   title: string;
   description: string;
@@ -16,25 +17,15 @@ const { title, description } = Astro.props;
 <html lang="en">
   <head>
     <Head title={`${title} | ${SITE.NAME}`} description={description} />
-    <!-- <script>
-      const script = document.createElement("script");
-      const container = document.querySelector("#utterances-container");
-      const currentTheme = localStorage.getItem("theme");
-    
-    
-      Object.entries({
-        src: "https://utteranc.es/client.js",
-        repo: "9yujin/blog-astro",
-        "issue-term": "pathname",
-        label: "post comments",
-        theme: currentTheme == "light" ? "github-light" : "github-dark",
-        crossorigin: "anonymous",
-      }).forEach(([key, value]) => {
-        script.setAttribute(key, value);
-      });
-    
-      container?.appendChild(script);
-    </script> -->
+    <script>
+      import { groupConsecutiveImages, setImageRowFlex } from "@lib/image";
+      function init() {
+        groupConsecutiveImages();
+        setImageRowFlex();
+      }
+      document.addEventListener("DOMContentLoaded", () => init());
+      document.addEventListener("astro:after-swap", () => init());
+    </script>
   </head>
   <body>
     <Header />

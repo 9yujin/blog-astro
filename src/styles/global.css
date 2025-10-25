@@ -169,6 +169,25 @@ article img {
   border-radius: 12px;
 }
 
+/* 연속된 이미지들을 1열로 배치 (높이 동일, 비율 유지) */
+article .image-row {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+article .image-row p {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+article .image-row img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
 article .video-container {
   position: relative;
   width: 100%;
@@ -238,4 +257,44 @@ article
   }
 
   @apply text-black/50 dark:text-white/75;
+}
+
+article .rehype-figure-title-container {
+  display: none; /* 초기에 숨김 - JavaScript가 처리할 때까지 */
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+article .rehype-figure-title-container.image-row-first {
+  margin-bottom: 0.2rem;
+}
+
+article .rehype-figure-title-container.image-row-middle {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+article .rehype-figure-title-container.image-row-last {
+  margin-top: 0.2rem;
+}
+
+article .rehype-figure-title-container > figure {
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+}
+
+article .rehype-figure-title-container > figure img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 스켈레톤 (다크모드) */
+html.dark .skeleton-item {
+  background: rgb(65, 65, 67) !important;
 }
