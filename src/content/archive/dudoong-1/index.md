@@ -3,6 +3,8 @@ title: "[두둥] 1. 모두를 위한 공연 라이프"
 description:
 date: 03/08/2023
 draft: false
+tags:
+  - 두둥
 ---
 ### 1. 배경
 

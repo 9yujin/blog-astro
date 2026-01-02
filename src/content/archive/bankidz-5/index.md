@@ -3,6 +3,8 @@ title: "[뱅키즈] 5. React Query 마이그레이션"
 description:
 date: 10/13/2022
 draft: false
+tags:
+  - 뱅키즈
 ---
 ![Pasted image 20250928235440](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020250928235440.png)
 

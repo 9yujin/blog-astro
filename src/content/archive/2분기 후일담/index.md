@@ -2,6 +2,8 @@
 title: 2분기 후일담
 description:
 date: 06/13/2023
+tags:
+  - 긴_호흡
 ---
 
 ![nell](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/nell.gif)

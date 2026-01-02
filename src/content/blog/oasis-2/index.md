@@ -3,6 +3,8 @@ title: 햇빛 bless you, 파리 2편
 description:
 date: 11/07/2025
 draft: false
+tags:
+  - 여행
 ---
 
 #### 7월 12일 토요일 아침

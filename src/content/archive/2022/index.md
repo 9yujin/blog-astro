@@ -3,6 +3,8 @@ title: 글, 복학, 개발, 휴일, 2022 회고
 description:
 date: 12/27/2022
 draft: false
+tags:
+  - 긴_호흡
 ---
 ![Pasted image 20251016162630](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016162844.png)
 

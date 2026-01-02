@@ -3,6 +3,8 @@ title: "[뱅키즈] 1. 뱅키는 귀엽다"
 description:
 date: 07/25/2022
 draft: false
+tags:
+  - 뱅키즈
 ---
 ![](assets/Pasted%20image%2020250928235459.png)
 

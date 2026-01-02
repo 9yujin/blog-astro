@@ -3,6 +3,8 @@ title: 개발자로 성장하기
 description:
 date: 04/10/2023
 draft: false
+tags:
+  - 긴_호흡
 ---
  <div class="video-container"><iframe width="100%" src="https://www.youtube.com/embed/5qtApD2osyk?si=-2wK8W2CnCoV0hqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 

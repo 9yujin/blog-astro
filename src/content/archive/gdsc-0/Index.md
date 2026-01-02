@@ -3,6 +3,8 @@ title: GDSC 셀프 리쿠르팅
 description:
 date: 09/26/2022
 draft: false
+tags:
+  - 긴_호흡
 ---
 ![](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/07/gdsc.png)
 

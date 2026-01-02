@@ -3,6 +3,8 @@ title: "[두둥] 3. Next.js 웹 성능 최적화"
 description:
 date: 07/13/23
 draft: false
+tags:
+  - 두둥
 ---
 ![](https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FnmPFO%2Fbtsnvwwusu7%2FAAAAAAAAAAAAAAAAAAAAAN_CPjs9lyhNg8gRMAwP84H-lsO1H-YeGnM8nF_Pjveo%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1761922799%26allow_ip%3D%26allow_referer%3D%26signature%3DYuzAcEf4bvBSh%252Bi6XMbXolnjRks%253D)
 

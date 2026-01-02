@@ -3,6 +3,8 @@ title: 오아시스 보러 유럽 가는 블로그, 1편
 description:
 date: 10/17/2025
 draft: false
+tags:
+  - 여행
 ---
 오아시스는 나에게 꽤나 각별한 밴드였다. 지금의 음악 취향은 대부분 군대 시절에 만들어졌는데, 그 때 가장 많이 들었던 게 오아시스였다. 특히 [Familiar to Millions](https://music.apple.com/kr/album/familiar-to-millions-live/214488811) 라이브 앨범을 통으로 들으면서 그들의 공연을 계속 머릿속으로 계속 상상했던 것 같다. 알라딘에서 펀딩하는 [책](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=245549093)을 사서 읽어보기도 하고, 유튜브에서 다큐멘터리 영화 슈퍼소닉을 결제해서 보기도 했다. 이정도면 2020년대 방구석에서 할 수 있는 건 다 한거 아닌가.
 
