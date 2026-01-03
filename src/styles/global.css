@@ -76,18 +76,11 @@
 }
 
 html {
-  overflow-y: scroll;
   color-scheme: light;
 }
 
 html.dark {
   color-scheme: dark;
-}
-
-html,
-body {
-  @apply size-full;
-  @apply overflow-y-scroll;
 }
 
 body {
@@ -98,16 +91,13 @@ body {
 }
 
 header {
-  @apply fixed top-0 left-0 right-0 z-50;
+  @apply sticky top-0 z-50;
   padding-top: calc(1rem + env(safe-area-inset-top));
   padding-bottom: 1.5rem;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  contain: layout paint;
 }
 
 main {
-  @apply flex-1 py-24;
+  @apply flex-1 py-12;
 }
 
 footer {
