@@ -3,46 +3,52 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
-import { BLOG } from "@consts";
 
-const data = (await getCollection("blog"))
+const blog = await getCollection("blog");
+const archive = await getCollection("archive");
+
+const data = [...blog, ...archive]
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-  
+
 type Acc = {
-  [year: string]: CollectionEntry<"blog">[];
+  [tag: string]: (CollectionEntry<"blog"> | CollectionEntry<"archive">)[];
 }
 
 const posts = data.reduce((acc: Acc, post) => {
-    const year = post.data.date.getFullYear().toString();
-    if (!acc[year]) {
-      acc[year] = [];
+  const tags = post.data.tags || [];
+  tags.forEach(tag => {
+    if (!acc[tag]) {
+      acc[tag] = [];
     }
-    acc[year].push(post);
-    return acc;
-  }, {});
+    acc[tag].push(post);
+  });
+  return acc;
+}, {});
 
-const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a)); 
+const tags = Object.keys(posts).sort((a, b) =>
+  posts[b][0].data.date.valueOf() - posts[a][0].data.date.valueOf()
+);
 ---
 
-<PageLayout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
+<PageLayout title="Tags" description="Blog posts by tag">
   <Container>
     <div class="space-y-10">
       <div class="font-semibold text-black dark:text-white">
-        Blog
+        Tags
       </div>
       <div class="space-y-4">
-        {years.map(year => (
+        {tags.map(tag => (
           <section class="space-y-4">
             <div class="font-semibold text-black dark:text-white">
-              {year}
+              {tag.replace(/_/g, " ")}
             </div>
             <div>
               <ul class="flex flex-col mb-8">
                 {
-                  posts[year].map((post) => (
+                  posts[tag].map((post) => (
                     <li>
-                      <ArrowCard entry={post} padding="py-2" arrow={false}/>
+                      <ArrowCard entry={post} padding="py-2" arrow={false} showDate/>
                     </li>
                   ))
                 }

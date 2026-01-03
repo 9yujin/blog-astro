@@ -57,11 +57,11 @@ const work = await Promise.all(
         <ul class="flex flex-col">
           {blog.map(post => (
             <li>
-              <ArrowCard entry={post} padding="py-1.5" arrow={false} date={false}/>
+              <ArrowCard entry={post} padding="py-1.5" arrow={false}/>
             </li>
           ))}
         </ul>
-        <Link href="/blog" underline>
+        <Link href="/year" underline>
           more →
         </Link>
       </section>

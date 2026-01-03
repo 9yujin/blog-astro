@@ -10,6 +10,7 @@ const blog = defineCollection({
       .transform((val) => val ?? ""),
     date: z.coerce.date(),
     draft: z.boolean().optional(),
+    tags: z.array(z.string()).optional(),
   }),
 });
 
@@ -35,6 +36,7 @@ const archive = defineCollection({
     draft: z.boolean().optional(),
     demoURL: z.string().optional(),
     repoURL: z.string().optional(),
+    tags: z.array(z.string()).optional(),
   }),
 });
 
