@@ -87,6 +87,7 @@ html.dark {
 html,
 body {
   @apply size-full;
+  @apply overflow-y-scroll;
 }
 
 body {
@@ -98,21 +99,11 @@ body {
 
 header {
   @apply fixed top-0 left-0 right-0 z-50;
-  padding-top: 1rem;
+  padding-top: calc(1rem + env(safe-area-inset-top));
   padding-bottom: 1.5rem;
-  /* @apply backdrop-blur-sm; */
-  background: linear-gradient(
-    to bottom,
-    theme("colors.stone.100" / 80%) 0%,
-    theme("colors.stone.100" / 0%) 100%
-  );
-}
-html.dark header {
-  background: linear-gradient(
-    to bottom,
-    rgba(35, 36, 37, 0.8) 0%,
-    rgba(35, 36, 37, 0) 100%
-  );
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  contain: layout paint;
 }
 
 main {
@@ -155,14 +146,6 @@ article {
 
 .animate.show {
   @apply opacity-100 translate-y-0;
-}
-
-html #back-to-top {
-  @apply opacity-0 pointer-events-none;
-}
-
-html.scrolled #back-to-top {
-  @apply opacity-100 pointer-events-auto;
 }
 
 article img {
