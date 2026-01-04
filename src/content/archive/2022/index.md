@@ -4,7 +4,7 @@ description:
 date: 12/27/2022
 draft: false
 tags:
-  - 긴_호흡
+  - 회고
 ---
 ![Pasted image 20251016162630](https://obsidian-content-assets.s3.ap-southeast-2.amazonaws.com/2025/10/16/Pasted%20image%2020251016162844.png)
 
