@@ -185,8 +185,9 @@ article ul {
 }
 
 article li {
-  margin: 0;
   padding-inline-start: 0;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 article :where(blockquote p:first-of-type)::before {
@@ -207,11 +208,11 @@ article :where(blockquote) {
 }
 
 article :where(h4) {
-  margin-top: 2.2rem;
+  margin-top: 2.7rem;
 }
 
 article :where(h3) {
-  margin-top: 2.4rem;
+  margin-top: 3rem;
 }
 
 article
@@ -240,8 +241,8 @@ article .rehype-figure-title-container {
   align-items: flex-start;
   width: 100%;
   gap: 0.2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 article .rehype-figure-title-container.image-row-first {
@@ -273,4 +274,11 @@ article .rehype-figure-title-container > figure img {
 /* 스켈레톤 (다크모드) */
 html.dark .skeleton-item {
   background: rgb(65, 65, 67) !important;
+}
+
+/* 이미지 그룹 위아래 마진 관련 */
+article
+  :where(figure):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
