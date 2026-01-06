@@ -116,6 +116,7 @@ article {
 @layer utilities {
   article a {
     @apply font-sans underline underline-offset-2;
+    font-weight: unset;
     color: rgb(255, 85, 68);
     text-decoration-color: rgb(255, 85, 68, 0.4);
     .dark & {

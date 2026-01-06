@@ -1,0 +1,81 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import FormattedDate from "@components/FormattedDate.astro";
+import { readingTime } from "@lib/utils";
+import BackToPrev from "@components/BackToPrev.astro";
+import Link from "@components/Link.astro";
+
+export async function getStaticPaths() {
+  const blog = (await getCollection("blog"))
+    .filter(post => !post.data.draft)
+    .map((post) => ({
+      params: { slug: post.slug },
+      props: { entry: post },
+    }));
+
+  const archive = (await getCollection("archive"))
+    .filter(post => !post.data.draft)
+    .map((post) => ({
+      params: { slug: post.slug },
+      props: { entry: post },
+    }));
+
+  return [...blog, ...archive];
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<"blog"> | CollectionEntry<"archive"> };
+const { Content } = await entry.render();
+
+const isArchive = entry.collection === "archive";
+const archiveData = isArchive ? (entry as CollectionEntry<"archive">).data : null;
+---
+
+<PageLayout title={entry.data.title} description={entry.data.description}>
+  <Container>
+    <div class="space-y-1 my-10">
+      <div class=" text-2xl font-semibold text-black dark:text-white">
+        {entry.data.title}
+      </div>
+      <div class=" flex items-center gap-1.5">
+        <div class="font-base text-sm">
+          <FormattedDate date={entry.data.date} />
+        </div>
+        &bull;
+        <div class="font-base text-sm">
+          {readingTime(entry.body)}
+        </div>
+      </div>
+
+      {isArchive && (archiveData?.demoURL || archiveData?.repoURL) && (
+        <nav class=" flex gap-1">
+          {archiveData?.demoURL && (
+            <Link href={archiveData.demoURL} external>
+              demo
+            </Link>
+          )}
+          {archiveData?.demoURL && archiveData?.repoURL && (
+            <span>/</span>
+          )}
+          {archiveData?.repoURL && (
+            <Link href={archiveData.repoURL} external>
+              repo
+            </Link>
+          )}
+        </nav>
+      )}
+    </div>
+    <article class="">
+      <Content />
+      <div class="h-10"/>
+      <hr/>
+    </article>
+
+    <div class="h-20"/>
+    <BackToPrev href="/articles">
+      Back to Articles
+    </BackToPrev>
+
+  </Container>
+</PageLayout>
