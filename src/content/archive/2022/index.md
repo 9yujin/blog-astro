@@ -1,5 +1,5 @@
 ---
-title: 글, 복학, 개발, 휴일, 2022 회고
+title: 글, 복학, 개발, 휴일 (2022)
 description:
 date: 12/27/2022
 draft: false
