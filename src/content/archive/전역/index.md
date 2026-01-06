@@ -1,7 +1,7 @@
 ---
 title: 전역 후 일년
 description:
-date: 11/8/2022
+date: 9/9/2022
 draft: false
 tags:
   - 회고
