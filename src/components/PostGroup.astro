@@ -1,0 +1,27 @@
+---
+import type { Post } from "@types";
+import PostCard from "@components/PostCard.astro";
+
+type Props = {
+  title: string;
+  posts: Post[];
+  showDate?: boolean;
+}
+
+const { title, posts, showDate = false } = Astro.props;
+---
+
+<section class="space-y-4">
+  <div class="font-semibold text-black dark:text-white">
+    {title}
+  </div>
+  <div>
+    <ul class="flex flex-col mb-8">
+      {posts.map(post => (
+        <li>
+          <PostCard entry={post} padding="py-2" showDate={showDate}/>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

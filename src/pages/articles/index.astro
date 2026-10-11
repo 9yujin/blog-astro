@@ -1,74 +1,54 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import type { Post } from "@types";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
-import ArrowCard from "@components/ArrowCard.astro";
+import PostGroup from "@components/PostGroup.astro";
+import { getPosts } from "@lib/posts";
 
-const blog = await getCollection("blog");
-const archive = await getCollection("archive");
+const posts = await getPosts();
 
-const data = [...blog, ...archive]
-  .filter(post => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-
-// Posts by year
-type YearAcc = {
-  [year: string]: (CollectionEntry<"blog"> | CollectionEntry<"archive">)[];
-}
-
-const postsByYear = data.reduce((acc: YearAcc, post) => {
-  const year = post.data.date.getFullYear().toString();
-  if (!acc[year]) {
-    acc[year] = [];
+const groupBy = (keysOf: (post: Post) => string[]) => {
+  const groups: Record<string, Post[]> = {};
+  for (const post of posts) {
+    for (const key of keysOf(post)) {
+      (groups[key] ??= []).push(post);
+    }
   }
-  acc[year].push(post);
-  return acc;
-}, {});
+  return groups;
+};
 
+const postsByYear = groupBy(post => [post.data.date.getFullYear().toString()]);
 const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a));
 
-// Posts by tag
-type TagAcc = {
-  [tag: string]: (CollectionEntry<"blog"> | CollectionEntry<"archive">)[];
-}
-
-const postsByTag = data.reduce((acc: TagAcc, post) => {
-  const tags = post.data.tags || [];
-  tags.forEach(tag => {
-    if (!acc[tag]) {
-      acc[tag] = [];
-    }
-    acc[tag].push(post);
-  });
-  return acc;
-}, {});
-
+// 가장 최근 글이 있는 태그부터
+const postsByTag = groupBy(post => post.data.tags ?? []);
 const tags = Object.keys(postsByTag).sort((a, b) =>
   postsByTag[b][0].data.date.valueOf() - postsByTag[a][0].data.date.valueOf()
 );
+
+const TABS = [
+  { id: "posts", label: "Posts" },
+  { id: "tags", label: "Tags" },
+];
 ---
 
 <PageLayout title="Articles" description="All articles">
   <Container>
     <div class="space-y-10">
-      <div class="flex gap-4">
-        <button
-          id="tab-posts"
-          class="font-semibold text-black dark:text-white tab-btn"
-          data-tab="posts"
-        >
-          Posts
-        </button>
-        <button
-          id="tab-tags"
-          class="font-semibold text-black/40 dark:text-white/40 tab-btn"
-          data-tab="tags"
-        >
-          Tags
-        </button>
+      <div class="flex gap-4" role="tablist">
+        {TABS.map(({ id, label }, index) => (
+          <button
+            role="tab"
+            data-tab={id}
+            aria-selected={index === 0 ? "true" : "false"}
+            class="font-semibold text-black/40 dark:text-white/40 aria-selected:text-black dark:aria-selected:text-white"
+          >
+            {label}
+          </button>
+        ))}
       </div>
 
-      <div id="content-posts" class="space-y-4">
+      <div data-tab-panel="posts" class="space-y-4">
         {years.map((year, index) => (
           <>
             {year === "2023" && index > 0 && (
@@ -76,44 +56,14 @@ const tags = Object.keys(postsByTag).sort((a, b) =>
                 <hr class="border-black/10 dark:border-white/10" />
               </div>
             )}
-            <section class="space-y-4">
-              <div class="font-semibold text-black dark:text-white">
-                {year}
-              </div>
-              <div>
-                <ul class="flex flex-col mb-8">
-                  {
-                    postsByYear[year].map((post) => (
-                      <li>
-                        <ArrowCard entry={post} padding="py-2" arrow={false}/>
-                      </li>
-                    ))
-                  }
-                </ul>
-              </div>
-            </section>
+            <PostGroup title={year} posts={postsByYear[year]} />
           </>
         ))}
       </div>
 
-      <div id="content-tags" class="space-y-4 hidden">
+      <div data-tab-panel="tags" class="space-y-4 hidden">
         {tags.map(tag => (
-          <section class="space-y-4">
-            <div class="font-semibold text-black dark:text-white">
-              {tag.replace(/_/g, " ")}
-            </div>
-            <div>
-              <ul class="flex flex-col mb-8">
-                {
-                  postsByTag[tag].map((post) => (
-                    <li>
-                      <ArrowCard entry={post} padding="py-2" arrow={false} showDate/>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          </section>
+          <PostGroup title={tag.replace(/_/g, " ")} posts={postsByTag[tag]} showDate />
         ))}
       </div>
     </div>
@@ -121,34 +71,15 @@ const tags = Object.keys(postsByTag).sort((a, b) =>
 </PageLayout>
 
 <script>
-  function initTabs() {
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const contentPosts = document.getElementById('content-posts');
-    const contentTags = document.getElementById('content-tags');
+  const tabs = document.querySelectorAll<HTMLElement>("[data-tab]");
+  const panels = document.querySelectorAll<HTMLElement>("[data-tab-panel]");
 
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tab = btn.getAttribute('data-tab');
-
-        tabBtns.forEach(b => {
-          b.classList.remove('text-black', 'dark:text-white');
-          b.classList.add('text-black/40', 'dark:text-white/40');
-        });
-
-        btn.classList.remove('text-black/40', 'dark:text-white/40');
-        btn.classList.add('text-black', 'dark:text-white');
-
-        if (tab === 'posts') {
-          contentPosts?.classList.remove('hidden');
-          contentTags?.classList.add('hidden');
-        } else {
-          contentPosts?.classList.add('hidden');
-          contentTags?.classList.remove('hidden');
-        }
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.setAttribute("aria-selected", String(t === tab)));
+      panels.forEach(panel => {
+        panel.classList.toggle("hidden", panel.dataset.tabPanel !== tab.dataset.tab);
       });
     });
-  }
-
-  initTabs();
-  document.addEventListener('astro:after-swap', initTabs);
+  });
 </script>

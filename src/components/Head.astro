@@ -10,7 +10,7 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/nano.png" } = Astro.props;
+const { title, description, image = "/og.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -25,12 +25,9 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <meta name="generator" content={Astro.generator} />
 <meta name="google-site-verification" content="v9RgjRWl6-hzLSF1cMP66ld-ggMdukEfN36rQSve_BM" />
 
-<!-- Pretendard Font preloads -->
-<link rel="preload" href="/fonts/Pretendard-Regular.woff2" as="font" type="font/ttf" crossorigin/>
-<link rel="preload" href="/fonts/Pretendard-SemiBold.woff2" as="font" type="font/ttf" crossorigin/>
-<link rel="preload" href="/fonts/Pretendard-Light.woff2" as="font" type="font/ttf" crossorigin/>
+<!-- Pretendard (variable, dynamic subset) -->
+<link rel="stylesheet" href="/fonts/pretendard/pretendardvariable-dynamic-subset.css" />
 
-<link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link href="https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css" rel="stylesheet" type="text/css" />
 
@@ -64,135 +61,37 @@ const { title, description, image = "/nano.png" } = Astro.props;
 
 
 <script is:inline>
-
-  function setUtterances() {
-    const script = document.createElement("script");
-      const container = document.querySelector("#giscus");
-      const currentTheme = localStorage.getItem("theme");
-    
-      Object.entries({
-        src: "https://giscus.app/client.js",
-        "data-repo": "9yujin/blog-astro",
-        "data-repo-id": "R_kgDOP12xDw",
-        "data-category": "comments",
-        "data-category-id": "DIC_kwDOP12xD84CwMqo",
-        "data-mapping": "pathname",
-        "data-strict": "0",
-        "data-reactions-enabled": "1",
-        "data-emit-metadata": "0",
-        "data-input-position": "bottom",
-        "data-theme": currentTheme == "light" ? "light" : "dark",
-        "data-lang": "ko",
-        crossorigin: "anonymous",
-        async: true
-      }).forEach(([key, value]) => {
-        script.setAttribute(key, value);
-      });
-    
-      container?.appendChild(script);
-  }
-  
-  async function init() {
-    preloadTheme();
-    animate();
-    setUtterances();
-
-    const backToPrev = document.getElementById("back-to-prev");
-    backToPrev?.addEventListener("click", () => window.history.back());
-
-    const lightThemeButton = document.getElementById("light-theme-button");
-    lightThemeButton?.addEventListener("click", () => {
-      localStorage.setItem("theme", "light");
-      toggleTheme(false);
-      toggleUtterancesTheme();
-    });
-
-    const darkThemeButton = document.getElementById("dark-theme-button");
-    darkThemeButton?.addEventListener("click", () => {
-      localStorage.setItem("theme", "dark");
-      toggleTheme(true);
-      toggleUtterancesTheme();
-    });
-
-    const systemThemeButton = document.getElementById("system-theme-button");
-    systemThemeButton?.addEventListener("click", () => {
-      localStorage.setItem("theme", "system");
-      toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
-      toggleUtterancesTheme();
-    });
-
-    window.matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", event => {
-        if (localStorage.theme === "system" || !localStorage.theme) {
-          toggleTheme(event.matches);
-        }
-      }
-    );
-  }
-
-  function animate() {
-    const animateElements = document.querySelectorAll(".animate");
-
-    animateElements.forEach((element, index) => {
-      setTimeout(() => {
-        element.classList.add("show");
-      }, index * 150);
-    });
-  }
-
-function toggleUtterancesTheme() {
-  if (document.querySelector(".giscus-frame")) {
-    const theme = localStorage.getItem("theme") === "light" ? "light" : "dark";
-    const message =  {
-      giscus: {
-        setConfig: {
-          theme: theme,
-        },
-      },
-    };
-
-    const iframe = document.querySelector(".giscus-frame");
-    iframe?.contentWindow?.postMessage(message, "https://giscus.app");
-  }
-}
-function toggleTheme(dark) {
+  function toggleTheme(dark) {
     const css = document.createElement("style");
-
-    css.appendChild(
-      document.createTextNode(
-        `* {
-             -webkit-transition: none !important;
-             -moz-transition: none !important;
-             -o-transition: none !important;
-             -ms-transition: none !important;
-             transition: none !important;
-          }
-        `,
-      )
-    );
-
+    css.textContent = "* { transition: none !important; }";
     document.head.appendChild(css);
 
-    if (dark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    document.documentElement.classList.toggle("dark", dark);
 
-  window.getComputedStyle(css).opacity;
+    window.getComputedStyle(css).opacity;
     document.head.removeChild(css);
   }
 
-  function preloadTheme() {
+  function applyTheme() {
     const userTheme = localStorage.theme;
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    if (userTheme === "light" || userTheme === "dark") {
-      toggleTheme(userTheme === "dark");
-    } else {
-      toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
-    }
+    toggleTheme(userTheme === "dark" || (userTheme !== "light" && prefersDark));
   }
 
-  document.addEventListener("DOMContentLoaded", () => init());
-  preloadTheme();
+  function init() {
+    ["light", "dark", "system"].forEach((theme) => {
+      const button = document.getElementById(`${theme}-theme-button`);
+      button?.addEventListener("click", () => {
+        localStorage.setItem("theme", theme);
+        applyTheme();
+      });
+    });
+
+    window.matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", applyTheme);
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+  applyTheme();
 </script>

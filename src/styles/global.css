@@ -2,79 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Pretendard Font Definitions */
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("/fonts/Pretendard-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
   color-scheme: light;
 }
@@ -130,36 +57,8 @@ article {
   }
 }
 
-.animate {
-  @apply opacity-0 translate-y-3;
-  @apply transition-all duration-700 ease-out;
-}
-
-.animate.show {
-  @apply opacity-100 translate-y-0;
-}
-
 article img {
   border-radius: 12px;
-}
-
-/* 연속된 이미지들을 1열로 배치 (높이 동일, 비율 유지) */
-article .image-row {
-  display: flex;
-  gap: 0.5rem;
-  margin: 1.5rem 0;
-  width: 100%;
-}
-
-article .image-row p {
-  margin: 0;
-  flex-shrink: 0;
-}
-
-article .image-row img {
-  display: block;
-  height: 100%;
-  width: auto;
 }
 
 article .video-container {
@@ -270,11 +169,57 @@ article .rehype-figure-title-container > figure img {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 0;
 }
 
-/* 스켈레톤 (다크모드) */
-html.dark .skeleton-item {
-  background: rgb(65, 65, 67) !important;
+/* 이미지 묶음은 바깥쪽 네 모서리만 둥글게 */
+article
+  .rehype-figure-title-container:not(.image-row-middle, .image-row-last)
+  > figure:first-child
+  img {
+  border-top-left-radius: 12px;
+}
+
+article
+  .rehype-figure-title-container:not(.image-row-middle, .image-row-last)
+  > figure:last-child
+  img {
+  border-top-right-radius: 12px;
+}
+
+article
+  .rehype-figure-title-container:not(.image-row-first, .image-row-middle)
+  > figure:first-child
+  img {
+  border-bottom-left-radius: 12px;
+}
+
+article
+  .rehype-figure-title-container:not(.image-row-first, .image-row-middle)
+  > figure:last-child
+  img {
+  border-bottom-right-radius: 12px;
+}
+
+/* 이미지 묶음 로딩 스켈레톤 */
+article .skeleton-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-height: 300px;
+}
+
+article .skeleton-item {
+  flex: 1;
+  height: 300px;
+  border-radius: 12px;
+  background-color: #e5e7eb;
+  .dark & {
+    background-color: rgb(65, 65, 67);
+  }
 }
 
 /* 이미지 그룹 위아래 마진 관련 */

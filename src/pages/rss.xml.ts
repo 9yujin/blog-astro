@@ -1,31 +1,24 @@
 import rss from "@astrojs/rss";
-import { getCollection } from "astro:content";
-import { HOME } from "@consts";
+import { HOME, SITE } from "@consts";
+import { getPosts } from "@lib/posts";
+import { excerpt } from "@lib/utils";
 
 type Context = {
   site: string;
 };
 
 export async function GET(context: Context) {
-  const blog = (await getCollection("blog")).filter((post) => !post.data.draft);
-
-  const archive = (await getCollection("archive")).filter(
-    (archive) => !archive.data.draft
-  );
-
-  const items = [...blog, ...archive].sort(
-    (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
-  );
+  const posts = await getPosts();
 
   return rss({
-    title: HOME.TITLE,
+    title: SITE.NAME,
     description: HOME.DESCRIPTION,
     site: context.site,
-    items: items.map((item) => ({
-      title: item.data.title,
-      description: item.data.description,
-      pubDate: item.data.date,
-      link: `/articles/${item.slug}/`,
+    items: posts.map((post) => ({
+      title: post.data.title,
+      description: post.data.description || excerpt(post.body),
+      pubDate: post.data.date,
+      link: `/articles/${post.slug}/`,
     })),
   });
 }

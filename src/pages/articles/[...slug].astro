@@ -1,72 +1,65 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import type { Post } from "@types";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
-import { readingTime } from "@lib/utils";
 import BackToPrev from "@components/BackToPrev.astro";
 import Link from "@components/Link.astro";
+import { excerpt, readingTime } from "@lib/utils";
+import { getOgImage } from "@lib/og";
+import { getPosts } from "@lib/posts";
 
 export async function getStaticPaths() {
-  const blog = (await getCollection("blog"))
-    .filter(post => !post.data.draft)
-    .map((post) => ({
-      params: { slug: post.slug },
-      props: { entry: post },
-    }));
-
-  const archive = (await getCollection("archive"))
-    .filter(post => !post.data.draft)
-    .map((post) => ({
-      params: { slug: post.slug },
-      props: { entry: post },
-    }));
-
-  return [...blog, ...archive];
+  return (await getPosts()).map((post) => ({
+    params: { slug: post.slug },
+    props: { entry: post },
+  }));
 }
 
-const { entry } = Astro.props as { entry: CollectionEntry<"blog"> | CollectionEntry<"archive"> };
+const { entry } = Astro.props as { entry: Post };
 const { Content } = await entry.render();
 
-const isArchive = entry.collection === "archive";
-const archiveData = isArchive ? (entry as CollectionEntry<"archive">).data : null;
+const links = entry.collection === "archive" ? entry.data : undefined;
+
+const description = entry.data.description || excerpt(entry.body);
+const image = await getOgImage(entry);
 ---
 
-<PageLayout title={entry.data.title} description={entry.data.description}>
+<PageLayout title={entry.data.title} description={description} image={image}>
   <Container>
     <div class="space-y-1 my-10">
-      <div class=" text-2xl font-semibold text-black dark:text-white">
+      <div class="text-2xl font-semibold text-black dark:text-white">
         {entry.data.title}
       </div>
-      <div class=" flex items-center gap-1.5">
-        <div class="font-base text-sm">
+      <div class="flex items-center gap-1.5">
+        <div class="text-sm">
           <FormattedDate date={entry.data.date} />
         </div>
         &bull;
-        <div class="font-base text-sm">
+        <div class="text-sm">
           {readingTime(entry.body)}
         </div>
       </div>
 
-      {isArchive && (archiveData?.demoURL || archiveData?.repoURL) && (
-        <nav class=" flex gap-1">
-          {archiveData?.demoURL && (
-            <Link href={archiveData.demoURL} external>
+      {(links?.demoURL || links?.repoURL) && (
+        <nav class="flex gap-1">
+          {links.demoURL && (
+            <Link href={links.demoURL} external>
               demo
             </Link>
           )}
-          {archiveData?.demoURL && archiveData?.repoURL && (
+          {links.demoURL && links.repoURL && (
             <span>/</span>
           )}
-          {archiveData?.repoURL && (
-            <Link href={archiveData.repoURL} external>
+          {links.repoURL && (
+            <Link href={links.repoURL} external>
               repo
             </Link>
           )}
         </nav>
       )}
     </div>
-    <article class="">
+    <article>
       <Content />
       <div class="h-10"/>
       <hr/>

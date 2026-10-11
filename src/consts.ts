@@ -2,20 +2,12 @@ import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
   NAME: "9yu*",
-  EMAIL: "david0218@naver.com",
   NUM_POSTS_ON_HOMEPAGE: 5,
-  NUM_WORKS_ON_HOMEPAGE: 2,
-  NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Astro Nano is a minimal and lightweight blog and portfolio.",
-};
-
-export const POSTS: Metadata = {
-  TITLE: "Posts",
-  DESCRIPTION: "A collection of articles on topics I am passionate about.",
+  DESCRIPTION: "글을 쓰고 공간을 단장합니다. 웹 개발을 도구로 멋진 제품을 만듭니다.",
 };
 
 export const RESUME: Metadata = {

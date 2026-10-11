@@ -1,0 +1,22 @@
+---
+import type { Post } from "@types";
+import FormattedDate from "@components/FormattedDate.astro";
+
+type Props = {
+  entry: Post;
+  padding?: string;
+  showDate?: boolean;
+}
+
+const { entry, padding, showDate = false } = Astro.props;
+const tag = entry.data.tags?.[0];
+---
+
+<a href={`/articles/${entry.slug}`} class={`group flex justify-between items-center ${padding} outline-none`}>
+  <div class="decoration-black/15 dark:decoration-white/30 group-hover:decoration-black/25 group-hover:dark:decoration-white/50 text-black/75 dark:text-white/90 group-hover:text-black group-hover:dark:text-white transition-colors duration-300 ease-in-out group-hover:underline group-focus-visible:underline group-focus-visible:decoration-dashed underline-offset-2 flex-1 pr-4">
+    {entry.data.title}
+  </div>
+  <div class="text-sm font-normal flex-shrink-0">
+    {showDate ? <FormattedDate date={entry.data.date} /> : tag?.replace(/_/g, " ")}
+  </div>
+</a>
