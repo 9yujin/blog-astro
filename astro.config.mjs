@@ -5,8 +5,11 @@ import tailwind from "@astrojs/tailwind";
 import rehypeFigureTitle from "rehype-figure-title";
 
 export default defineConfig({
-  site: "https://9yu.netlify.app",
+  site: "https://antifreeze.kr",
   integrations: [mdx(), sitemap(), tailwind()],
+  build: {
+    inlineStylesheets: "always",
+  },
   markdown: {
     rehypePlugins: [rehypeFigureTitle],
   },
